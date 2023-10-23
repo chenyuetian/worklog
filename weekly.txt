@@ -1,0 +1,1343 @@
+weekly 8/20/21
+-had a Zoom meeting with Feng and user mimieze about the feasibility of running her Python code on HPC
+-had a Zoom meeting with user pbacop about the Pyadcircmodules issue, and created a Singularity container for him
+-took two days off for kid
+-followed up user bfarme8's Framer issue and made the code run in batch jobs
+-opened several accounts
+-several other user issues
+
+
+weekly 8/13/21
+-had a Zoom meeting with user bfarme8 about running Framer on smic
+-had a Zoom meeting with user wxx6941 about a possible coding work for him
+-attended RROCCET21 conference
+-investigated user pbacop's Pyadcircmodules issue
+-modified user rhall's user environment to load quantum espresso
+-investigated user rburne4's R code running on mike2
+-several other user issues
+
+weekly 8/6/21
+-had a Zoom meeting with user wjian15 about testing her Python code on LONI
+-had a Zoom meeting with user wxx6941 about a possible coding work for him
+-tested and used Open Babel to solve user wxx6941's input format transfer issue
+-examined user whtsao's "module load proteus" problem
+-investigated user sghimi7's bowtie2 conda environment issue on mike2
+-several other user issues
+
+weekly 7/30/21
+-installed macs2 as well as ngsplot for user sghimi7 on mike2
+-investigated an extension request of 48 jobs from user guannan
+-installed and tested siesta for user goyeke1 
+-followed up with user rcalde2 about the storage allocation of her group and qiime2
+-ITS All Staff meeting
+-several other user issues
+
+weekly 7/23/21
+-installed another LAMMPS as well as pafi for user rnamak on qb2
+-updated user shawnxc's user env to use the conda in the /project
+-helped user whtsao setup the user env for chrono installation and showed how to run demo files
+-helped user wxx6941 to start R calculations with my previous code 
+-followed up with user jomojo1 about the plan of using SuperMic 
+-guided user bourdin how to install fenics with conda (rahter than with Singularity)
+-solved user gdleri1's issues about the syntax and package install in the R and job scripts 
+-answered multiple questions from user rcalde2 about the storage allocation and qiime2 re-install
+-PEARC21
+-several other user issues
+
+weekly 7/9/21
+weekly 7/16/21
+-installed newest version of LAMMPS with selected packages for user rnamak on qb2
+-corrected user aalatyar's PATH to bring back some bash system commands on mike2
+-investigated why user blimer's Matlab jobs used more cores than allocated in single queue on mike2 
+-investigated user jgaray's job crash issue (OOM and missing libs) with Sam and Tim
+-helped user lzhu10 install a new version of numpy in his own space on mike2
+-updated mike2 maintenance on Google Calendar and resolved two user issues related to it  
+-registered for PEARC21
+-taught HPC User Environment 2
+-several other user issues
+
+weekly 7/2/21
+-fixed and installed phyluce-1.7.1 for user habromys
+-tested installation of qiime2-2021.4 on Mike2 and SMIC and then gave advice to user bmath27
+-examined why user jwu ip address was blocked along with Phil, and provided a better way to transfer the files
+-preparing HPC User Environment 2
+-opened several accounts
+-several other user issues
+
+weekly 6/25/21
+-installed SeuratDisk in user guannan's /project
+-worked with Zach, Phil and Tim to further investigate user acrisp3's astopy script not working in Lustre on SMIC
+-helped user wxx6941 to rerun bio3d on QB2 and TMAlign on QB3
+-helped user lzhu10 install TrimGalore and its dependencies, and start multiple STAR calculations with bash script
+-installed pytorch and cuda 11 with conda for user jwu
+-preparing HPC User Environment 2
+-opened several accounts
+-several other user issues
+
+weekly 6/18/21
+-installed python3.7 and samap in user guannan's /project and corrected the PYTHONPATH
+-examined and tested rsync between Smic and Mike2 for user rmarco3
+-investigated user jomojo1's tensorflow-gpu running issue
+-investigated user acrisp3's astopy script not working in Lustre on SMIC
+-modified user yzchu's module settings to load the new namd module correctly on SMIC
+-opened several accounts
+-several other user issues
+
+
+weekly 6/4/21
+weekly 6/11/21
+-prepared for and taught the day 5 session of the LBRN boot camp 
+-visualized LBRN workshop registration and attendance data with Tableau
+-followed up the node slowness issue on DB for user xmlyqing
+-guided user titli how to install/use python packages like pip, pandas
+-answered more questions from a Ph.D. student in the accounting department 
+-contact LRAC for an allocation request for user jdey
+-installed STAR and gave HPC user training suggestion to user lzhu10 
+-help users bli and qyu to restore R after QB2 OS upgrade 
+-investigated several new users' password issue
+-troubleshot user bguo's R code and libs that give wrong output on Mike2
+-troubleshot TorchANI and ASE installing and testing issues for user srick
+-opened several accounts
+-several other user issues
+
+weekly 5/28/21
+-prepared for and taught the day 2 session of the boot camp 
+-investigated a node slowness issue on DB for user xmlyqing
+-investigated Amber 18 GPU version issue on QB2 and QB3
+-answered more questions from a Ph.D. student in the accounting department 
+-opened several accounts
+-several other user issues
+
+weekly 5/21/21
+-installed several more R packages and external libs for user guannan 
+-followed up user ibrahim's lammps issue after QB2 OS upgrade
+-investigated the same user's lammps issue on smic
+-investigated user srick's lammps issue on QB2 and QB3
+-answered multiple questions from a Ph.D. student in the accounting department 
+-preparing for lbrn workshop
+-opened several accounts
+-several other user issues
+
+weekly 5/14/21
+-checked up user gcagle1's gnuparallel scripts and answered more questions 
+-tested matlab process distribution for user keniston's case
+-updated Gaussian module keys after QB2 OS upgrade 
+-showed user lgutsev how to run orca with MPI
+-investigating user ibrahim's lammps issue after QB2 OS upgrade
+-taught user wentao how to convert Windows format textfile to Linux, and installed R packages for the user 
+-double-checked two password reset requests and told users the correct step to access the account
+-checked up a ULL Matlab license server issue with the ULL server admin
+-investigated users alvaro's login problem
+-resovled user gutsev's Gaussian job submission issue by cleaning up user lgutsev's large file in node /scratch 
+-opened several accounts
+-several other user issues
+
+weekly 5/7/21
+-checked up user gcagle1's pbs script and gnuparallel scripts and answered multiple questions 
+-learned how to compile and test G-PhoCS with multithreading for user gdleri1
+-investigating user bwang31's job abnormal terminations on QB3
+-opened several accounts
+-several other user issues
+
+weekly 4/30/21
+-had another zoom meeting with user wxx6941, keep modifying an R script for him
+-helped user guannan to install R packages
+-tested GROMACS with MPI or GPUs on two rhel 7 nodes on qb2
+-installed multiple R packages of R-4.0.2 system-widely on mike2
+-tested lammps MPI with CPUs and GPUs on two rhel 7 nodes on qb2
+-opened several accounts
+-several other user issues
+
+weekly 4/23/21
+-had another zoom meeting with user wxx6941, and ran more sequence identity and rmsd calculations in R
+-investigated user sbastola's login problem
+-troubleshot wxx6941's python code and fixed his python environment issue
+-investigated user amiesett's slow mike438 and mike439 issue
+-installed R-4.0.2 system-widely on mike2
+-tested orca with MPI on two rhel 7 nodes on qb2
+-opened several accounts
+-updated google calendar about the qb2 downtime for OS upgrade and storage migration
+-several other user issues
+
+weekly 4/16/21
+-had another zoom meeting with user wxx6941, and ran more calculations on the feature_map data
+-investigated user amiesett's walltime output issue
+-attended Nvidia GTC 21
+-HPC website update:
+   added Deep Bayou software list to http://www.hpc.lsu.edu/docs/guides/index.php#DeepBayou
+   added Deep Bayou entry to http://www.hpc.lsu.edu/resources/software/index.php
+   added Deep Bayou system specific information to http://www.hpc.lsu.edu/users/LSU-HPC-Storage-Policy.php
+   add Deep Bayou to "What computing resources are available" in lsuhpcfaq.php
+   added QB3 system specific information into http://www.hpc.lsu.edu/users/lonistorage.php
+   fixed R "Usage" and "Resources" display by changing name "ur_R.php" to "ur_r.php"
+-opened several accounts
+-several other user issues
+   
+
+weekly 4/9/21
+-investigated user areige1's qiime2 conda environment issue
+-keep modifying an R script for user wxx6941
+-checked up user asnide4's miniconda installation issue
+-had some research for the PMIx integrated MPI in Slurm
+-opened several accounts
+-several other user issues
+
+weekly 4/1/21
+-investigated user amiesett's high load issue
+-built and tested supergu for user gwagle
+-tested the virtual tour with Matterport
+-modified an R script for user wxx6941
+-updated google calendar
+-opened several accounts
+-several other user issues
+
+weekly 3/26/21
+-installed and tested sparcc in user rcalde2's /project directory
+-explained to user brant in detail about the storage allocation usage 
+-installed and tested Atomsk for user shawnxc
+-modified an R script for user wxx6941 
+-attended LSU Tableau bi-monthly meeting
+-attended GigaIO meeting
+-fixed user tyler333's rb-mpi code 
+-several other user issues
+
+weekly 3/12/21
+weekly 3/19/21
+-tested mcscan and replied the TeX questions to user ohdongha
+-had another zoom meeting with user wxx6941 ran more calculations to process bio3d data
+-followed up user pranayap's file transfer progress 
+-investigated user titli's tensorflow job failure and compared the output with references from user wxx6941
+-reenabled user oorrnnyy's LONI account and provided instructions about the allocation to her and her PI 
+-processed two urgent allocation requests from users xjwang and ischoegl
+-tested sbatch jobs on qb3 and informed error to the system admin
+-found out why user reza's home ip address was blocked
+-attended ITS all staff meeting
+-prepared and taught Introduction to RStudio
+-opened several accounts
+-several other user issues
+
+
+weekly 3/5/21
+-had another zoom meeting with user wxx6941 and ran more calculations to process the bio data
+-tested the performance with khamer3's code on workq and shelob queue
+-suggested user habromys how to choose queue, run job and monitor the memory usage in detail
+-examined user monsif's STAR job, and provided solution to submit his jobs
+-investigated users jontoy's login problem
+-attended the live zoom conference: OSG All-Hands Meeting 2021
+-preparing Introduction to RStudio
+-several other user issues
+
+
+weekly 2/19/21
+weekly 2/26/21
+-had several zoom meetings with user wxx6941 and wrote some code to process the bio data
+-provided a workaround to user ohdongha to correct the awk result in the batch job
+-checked mmousa4's /work usage and explained the data purge in /work to the user 
+-troubleshot user amiesett's samtools issue
+-investigated user dyin2's wrf batch job run on mike2
+-installed R package hrbrthemes for user btoup15
+-installed NAMD 2.14 in salli1's /home
+-reported lib missing on shelob009, and tested the performance with khamer3's code on workq and shelob queue  
+-updated google calendar
+  - upcoming weekly trainings
+  - research allocation deadline
+  - Supermike2 maintenance
+-opened several accounts
+-several other user issues
+
+weekly 2/5/21
+weekly 2/12/21
+-helped user gdleri1 to fix segmentation fault running bayescenv
+-installed and tested several R packages for user bli
+-installed voro++ and lammps for user jones42
+-found a workaround for user wxx6941 to load the modules 
+-explained to user hmazum in detail about the cpu load balance of his job
+-opened several accounts
+-several other user issues
+
+weekly 1/29/21
+-installed and tested qtlseq for user
+-helped user hlin1 with the storage allocation and job submission issue 
+-prepared and taught HPC User Environment 1
+-updated google calendar about weekly trainings
+-opened several accounts
+-several other user issues
+
+weekly 1/22/21
+-had a Zoom meeting with users lgn, pulimeng and msing21, teaching how to create their own Singluartiy image for use on smic
+-installed R packages for user ojohnson, troubleshot his job submission and monitoring issue in the single queue
+-repeated GPU benchmark test with Horovod (Pytorch + TensorFlow)on DB
+-troubleshot the GPU memory allocation issue for user shawnxc's group when using DeepMD-kit
+-troubleshot user mfaysal's compilation error on gcc 4.8.2 and c++11 
+-attended Open Storage Network (OSN) webinar
+-preparing HPC User Environment 1
+-opened several accounts
+-several other user issues
+
+weekly 1/15/21
+-updated pytorch-geometric Singularity image on SMIC
+-guided user ruizhang apply for storage allocation to install and use python 
+-installed and tested DeepMD-kit for user shawnxc's group
+-Attended Liqid demo
+-opened several accounts
+-several other user issues
+
+weekly 1/1/21
+weekly 1/8/21
+-investigated user rcalde2's qiime2 issue on Mike2
+-installed R package bio3d for user wxx6941
+-installed JAGS and R package Rjags for user wentao
+-updated Tableau source data about the LSU and LONI HPC allocation and usage
+-completed 2021 mandatory trainings: Louisiana Ethics, Preventing Sexual Misconduct, Digital Accessibility Awareness
+-activated one large allocation following the allocation reviwers' guide
+-opened several accounts
+-several other user issues
+
+weekly 12/18/20
+weekly 12/25/20
+-investigated and documented GPU benchmark test with Horovod (TensorFlow)
+-followed up user hypoxia's fvcom 4.3 running issue on SMIC
+-installed mothur in user mswans7's /home directory and did some trouble-shooting 
+-created and tested Singularity image for running PyTorch and TensorFlow on Deep Bayou
+-created a Spack production github repo branch for the Deep Bayou 
+-rebuilt the openmpi at /project/revatik to fix the gromacs glitch for revatik's group
+-activated two large allocations following the allocation reviwers' guide 
+-installed several applications and modules on Deep Bayou:
+  - perl and its module 
+  - Python 2 and 3 and their modules 
+  - openmpi and its module
+  - ddt and its module
+  - mpich and its module
+  - mvapich2, mvapich2-cuda, mvapich2-hydra and related modules
+  - r and its module
+-several other user issues
+
+
+weekly 12/11/20
+-investigated and documented GPU benchmark test with Horovod 
+-documented ORCA user permission and installation on BF
+-created and tested Singularity image for running PyTorch on Deep Bayou
+-created a Spack production github repo branch for the Deep Bayou 
+-rebuilt the openmpi at /project/revatik to fix the gromacs glitch for revatik's group
+-installed several applications and modules on Deep Bayou:
+  - gcc and its module 
+  - CUDA and its module 
+  - cmake and its module
+  - Intel compiler module 
+  - jdk module
+-several other user issues
+
+Weekly 11/27/20
+Weekly 12/4/20
+-installed agat and transdecoder in user jontoy's /project directory
+-installed, tested and BF documented root and garfield++ on QB3 for user kpham15
+-investigated users jones42 and delias's login problems
+-installed samtools 1.11 for user gabby29 and showed how to run the code through an interactive job
+-discussed orca access rule and added user lgutsev to the orca group on QB2 
+-opened several accounts
+-several other user issues
+
+Weekly 11/20/20
+-investigated the possible usage of ClusterODM in the singularity container
+-installed R packages in user qyu's /project directory for her whole group
+-worked on the website remediation to fix the WCAG2 AA E910 error caused by the improper units in the event calendar.
+-helped user jwbittin with his Fluent launch issues on QB3
+-attended SC20 tutorials and workshops
+-attended Town hall meetings for Super Mike 2 replacement
+-opened several accounts
+-several other user issues
+
+Weekly 11/13/20
+-installed R package mlma for several users
+-followed up running Gromacs in detail on qb3 with user csumma
+-had a Zoom meeting with user shawnsun's student about Ansys issue on qb3 
+-attended SC20 tutorials and workshops
+-attended LSU/Nvidia/Mellanox SC20 Meeting
+-attended Town hall meetings for Super Mike 2 replacement
+-attended CaRCC Researcher-Facing call on Profiling and Optimizing R Code in the Workflows
+-opened several accounts
+-several other user issues
+
+Weekly 10/30/20
+Weekly 11/6/20
+-investigated user areige1's qiime2 module loading issue
+-installed  Gromacs with CUDA enabled for user csumma
+-installed  Gromacs in user revatik's /project for her whole group
+-helped user etsai5 to troubleshoot the gromacs issue when running it on multiple nodes
+-helped user rcalde2 with the R libs issue caused by qiime2 module, and installed several new R packages in her own space.
+-followed up Ansys license issue with LaTech IT for user shawnsun
+-followed up user hypoxia's fvcom 4.3 and Visit installing and running issue
+-followed up user hjang3's file transfer problem
+-recovered user msing21's default command prompt and module commands
+-HPC google calendar update:
+  - Supermike2 & Smic maintenances
+  - town hall meetings for Supermike 2 replacement
+-opened several accounts
+-several other user issues
+
+Weekly 10/16/20
+Weekly 10/23/20
+-preparing and taught Introduction to R
+-investigated Ansys license issue for LaTech user shawnsun, and answered him multiple questions about HPC 
+-investigated user hypoxia's fvcom 4.3 installing and running issue
+-monitored user ohdongha's job progress and exteneded it
+-reenabled user kpham15's account and tried to install garfield in his /home
+-investigated user hjang3's file transfer problem
+-installed quast in user jontoy's /project directory
+-processed early allocation access for user schagen
+-registered SC20
+-opened several accounts
+-several other user issues
+
+Weekly 10/2/20
+Weekly 10/9/20
+-preparing Introduction to R
+-attended live zoom conference: Tableau Conference 20
+-attended two zoom meetings with users ohdongha and cekees 
+-investigated user yche122's matlab code issue, the first (out of 20) node cannot call the matlab to run the models
+-contacted ULL IT for the matlab server issue
+-installed and tested maker2 2.31.11 with Spack on QB3 in my own space.  
+-helped user nachaki setup the user environment to run lammps on smic, and showed how to run the code through an interactive job
+-disabled some user accounts based on the mailing list bounce action notice
+-opened several accounts
+-several other user issues
+
+Weekly 9/18/20
+Weekly 9/25/20
+-found out why user mrahm36's home ip address was blocked 
+-helped user habtomg to check the job script for running lammps, and showed how to run the code through an interactive job 
+-investigated user ohdongha's bigmem node usage and job extension 
+-processed early allocation access for user zxue
+-trouble-shot and compiled bader for user yexu 
+-built a modified lammps, as well as pafi for user rnamak
+-attended the live zoom conference: Tableau Developer Meeting
+-recompiled LTRANS with new software stack on mike2, and tested it for user liangjh
+-HPC website update:
+  updated google calendar about the QB-2 maintenance, weekly trainings and QB-3 launch workshop
+-opened several accounts
+-several other user issues
+
+Weekly 9/11/20
+-followed up user cekee's issues of OU group of LONI account, pending allocation request, use GCC6.4/mvapich2 on mike2/smic etc.
+-followed up user jwbittin's LONI account reactivation, and then installed Ansys 2020R2 under his /work on qb3
+-investigated the issue of running Peacock (a tool of Moose) requested by user kmomeni's group
+-helped user tajayi3 to run Linux version of validation_tough,  and showed how to run the code through an interactive job
+-installed muscle-3.8 with conda for bmath27, and showed how to run the code with an interactive session
+-helped user michalis to start the batch job in k40 queue on qb2, and showed how to run the code with an interactive session
+-opened several accounts
+-several other user issues
+
+
+Weekly 8/28/20
+Weekly 9/4/20
+-prepared and taught Linux training session
+-attended the live zoom conference: OSG All-Hands Meeting 2020
+-investigated user jfeins1's pytorch issue and reinstalled it in the conda environment when loading the Sinularity
+-helped user monsif install hicpro with conda, also tried build it with Singularity
+-installed Jags and Rjags for user bguo
+-took multiple tickets from a new user cekee about HPC
+-investigated user sackettl's blast install and run in the conda environment
+-re-compiled lammps for kmomeni's group
+-completed a couple of Tableau tables & charts in LONI 
+-HPC website update:
+  updated google calendar to include first four weekly trainings in Fall 2020 and QB-3 maintenance 
+  updated webpage about blast
+-opened several accounts
+-several other user issues
+
+Weekly 8/14/20
+Weekly 8/21/20
+-trouble-shot user nanmiao's multiple compiling issues with intel/gcc, as well as runtime job issues on qb2 and qb3 
+-trouble-shot user sackettl's trinity install and run in the conda environment
+-helped user monsif install hicpro with conda (instead of loading Singularity image)
+-completed a couple of Tableau charts showing the SU charge in LONI 
+-attended the live zoom conference: Cross-Track Call: Service Models for Researcher-Purchased Computing and Data
+-HPC website update:
+  modified read_module2csv.sh to display module key information of QB3, then updated module key info with read_module2csv.sh (so docs/guides/index.php will include Qb3)
+  added entry of QB3 into resources/hpc/system.php, resources/hpc/systems.array.php, resources/software/index.php (docs/index.php, docs/guides.php) 
+  added QB3 configuration to resources/hpc/index.php
+  added navigation links for QB3 at Resources -> HPC -> LONI, Resources -> Available Software -> LONI and Documentation -> Application Software -> By Machine
+  removed navigation link to compbio/index.php under Documentation -> User Guides
+  updated sysnews/index.php and its related webpages
+  updated google calendar at events.php to include planned outage, training, allocation deadlines, Friday's comp-pol meeting
+  updated php pages included in faq/index.php
+-opened several accounts
+-several other user issues
+
+
+Weekly 7/31/20
+Weekly 8/7/20
+-followed up user may's issue with excessive ssh connection using scp 
+-installed gromacs 2018 in user ghisha1's /home directory
+-completed a couple of Tableau eLearning courses about the Tableau Desktop 
+-Installed and tested a few packages on QB3
+  rebuilt gromacs
+-opened several accounts
+-several other user issues
+
+Weekly 7/17/20
+Weekly 7/24/20
+-investigated user may's issue with excessive ssh connection using scp 
+-investigated user luisat's Orthofinder job and possibly lifting "ulimit -nH" on smic
+-installed LAMMPS MPIIO package for user kmomeni
+-taught user jwu how to load Module, run jobs with his script and gnu-parallel
+-completed a couple of Tableau eLearning courses about the Tableau Desktop 
+-updated Tableau source data about the LSU and LONI HPC allocation and usage
+-Installed and tested a few packages on QB3
+  system-widely installed fastx_toolkit 0.0.14
+  system-widely installed trinity 2.8.6
+  system-widely installed openbabel 3.0.0
+  system-widely installed and tested gromacs 2020.3 in the mpi/openmp/hybrid mode 
+  system-widely installed perl 5.32.0 and its base libraries
+-opened several accounts
+-several other user issues
+
+Weekly 7/3/20
+Weekly 7/10/20
+-installed and activated lumerical in user sshari2's /home directory, and answered several questions about her allocaiton 
+-gave instruction to user bli on the parallel foreach in R 
+-helped user crystal with conda environment setup and installed picrust2 
+-found a workaround to fix the "mcpcom: core dumped" error, and installed a modified gromacs for user csumma on qb3
+-completed a couple of Tableau eLearning courses about the Tableau Desktop 
+-had another Zoom meeting with user aduart about how to use HPC resources to run his Matlab codes
+-guided user gcagle1 how to use conda to install software
+-Installed and tested a few packages on QB3
+  installed gcc 8.4.0
+  tested gromacs 2020.2 in the mpi/openmp/hybrid mode
+  installed and tested vmd 1.9.3
+-opened several accounts
+-several other user issues
+
+Weekly 6/26/20
+-installed trimmomatic in user susan's /home directory 
+-installed bedops in user jontoy's /project directory
+-answered a new user mp172910's multiple questions about HPC
+-taught user mswans7 how to check the bigmem node status and transfer between clusters
+-completed a couple of Tableau eLearning courses about the Tableau Desktop  
+-had a Zoom meeting with user aduart about how to use HPC resources to run his Matlab codes
+-trouble-shot user oomole2's bowtie2 job running 
+-opened several accounts
+-several other user issues
+
+Weekly 6/12/20
+Weekly 6/19/20
+-prepared and taught Linux training session
+-added Perl cpanm information to the software installation page on the HPC website
+-tested and compared user alborzfa's program compiliation on Mike2 and SMIC
+-visualized LBRN workshop registration and attendance data in Tableau
+-discussed with user salli1 about the use of vmd for her analysis and installed one in her /home
+-worked with Feng and Le on Spack on qb3:
+  fixed an issue in building lammps with cuda, and built lammps-20200303 with cuda system-widely
+  built Gromacs-2018.8 with Intel 19, system default gcc 4.8.5 and cuda support system-widely
+  fixed an conflict when using Intel 19 that depends on non system default gcc 
+  found current cuda 10.2.89 doesn't work with gcc 9, so built gcc 8.3 system-widely
+-checked out several login and file transfer issues 
+-opened several accounts
+-several other user issues
+
+Weekly 5/29/20
+Weekly 6/5/20
+-prepared and taught at summer workshop
+-followed up user csumma's gromacs job, and installed several missing perl modules to run his script
+-installed FastQC and setup environment for running it for user jobelle 
+-re-compiled lammps for kmomeni's group by adding voronoi module 
+-investigated user mfaysal's computing resources monitoring request
+-processed two Matlab activation requests on QB2
+-opened several accounts
+-several other user issues
+
+Weekly 5/15/20
+Weekly 5/22/20
+-preparing summer workshop tutorials
+-re-compiled lammps for kmomeni's group by adding vcsgc-lammps module 
+-helped user susan with job submission 
+-gave a workaround for user mswans7's mothur program crash issue
+-installed a modified gromacs for user csumma on qb2
+-investigated and installed R libraries splitstackshape library for user wxu6941
+-promoted RStudio on OOD to user bli's class teaching and had a quick demo with him via Zoom 
+-several other user issues
+
+Weekly 5/1/20
+Weekly 5/8/20
+-gave suggestions to user etrevino to setup the user environment to run R, and double-checked his affilication with his advisor
+-double-checked user zzang1's status with his advisor
+-helped a user in Weiwei Xie's group to run wein2k
+-investigated user sgo012's job failing issue
+-opened several accounts
+-several other user issues
+
+Weekly 4/24/20
+-followed up Lumerical installation and activation with user and CCT license server admin
+-installed Delft3d for user lzhu, and tested parallel build with new GNU autotools for fortran code on Supermike2
+-rebuilt WPS 4.1 for user wcao4, and created a BF post for future reference
+-opened several accounts
+-several other user issues
+
+Weekly 4/10/20
+Weekly 4/17/20
+-gave suggestions to improve user isarka's R code workflow, and a possible solution to run on multi nodes
+-examined user reza's fortran code and made rand function of fortran work
+-examined user xchen72's Amber program and provided solution to prevent NPT simulation crash
+-investigated user tadallas's job submission issue on bigmem as well as her R workflow
+-installed and tested wien2k 18.2 for user gx35009
+-tested user lzhu's swan code to let it run on multiple nodes correctly 
+-explained how allocation report should be handled to user mainardi and her student and taught them how to upload the report
+-updated Tableau source data about the LSU and LONI HPC allocation and usage
+-disabled some user accounts based on the mailing list bounce action notice
+-going through/learning Spack
+-opened several accounts
+-several other user issues
+
+Weekly 4/3/20
+-worked with Zach and Le on the RStudio container:
+  Rmarkdown notebooks, Intro_to_R.rmd, stress_test.rmd
+  fixed "PBS environment variables not found issue" in the OOD RStudio (by dumping them to ~/.Renviron)
+  added a binding point /var/spool/torque/aux for the container, so at runtime Rstudio can locate the hostnames saved there
+  added openssl into the recipe in order to use ssh in the container  
+  added a binding point /etc/ssh/known_hosts, so ssh can access to the known ssh host keys inside the container 
+  updated SINGULARITY_BINDPATH in the script.sh.erb by explicitly making the system binding points read-only with the :ro option
+-installed R package "factoextra" to /project/wxx6941
+-going through/learning RMarkdown
+-opened several accounts
+-several other user issues
+
+
+Weekly 3/27/20
+-worked with Zach and Le on the RStudio container
+  settings in the .ood-rstudio has been adopted, so there is no need to use .ood-rstudio when starting the job
+  fixed "Intel license not found issue" 
+  gave a solution to fix the mkl in the Rstudio instance vid OOD
+  added libxml2 into the recipe to support the R package installer "devtools" at runtime
+  added gtar(tar) into the recipe so the source code tarball can be unzipped by untar correctly  
+  tested bio package installer "Bioconductor" in the Rstudio instance vid OOD 
+-investigated user noha's R code crash on Mike2
+-going through/learning RMarkdown
+-opened several accounts
+-several other user issues
+
+Weekly 3/13/20
+Weekly 3/20/20
+-worked with Zach on the "stdlib.h not found" issue in the RStudio container
+-installed several bio tools for user wxx6941's group
+-prepared and taught Introduction to RStudio
+-opened several accounts
+-followed up several long-time tickets 
+-several other user issues
+
+
+Weekly 2/28/20
+Weekly 3/6/20
+-followed up user kurtz's WIEN2k problem with code that worked
+-installed cutadapt for user oomole2
+-preparing spring training session
+-opened several accounts
+-several other user issues
+
+
+Weekly 2/21/20
+-installed and tested Qiime2 2019.10 for user jchen51
+-tested user copycky's job script to find out why his job is filling up root filesystems
+-had multiple tests for user amwright to resolve her problem with rb-mpi that worked 
+-followed up user kurtz's WIEN2k problem with code that worked
+-opened several accounts
+-several other user issues
+
+Weekly 2/14/20
+-investigated user kurtz's WIEN2k problem with code that worked 
+-investigated usr amwright's problem with rb-mpi that worked 
+-trained a LaTech user who has been using QB2 since 2014 but didn't know how Modules and interactive job works
+-followed up user's SWAN Model error on smic
+-prepared and taught HPC User Environment 2 training 
+-opened several accounts
+-several other user issues
+
+Weekly 2/7/20
+-investigated a user's SWAN Model error on smic
+-investigated a user's matrix multiplication request with mpi
+-preparing spring training session
+-followed up Mathematica license traffic SELU license admin
+-opened several accounts
+-several other user issues
+
+Weekly 1/31/20
+-installed abyss for user emsigel
+-investigated user brant's job running and email notification issue 
+-prepared and taught Linux training session
+-followed up Mathematica license traffic SELU license admin
+-opened several accounts
+-several other user issues
+
+Weekly 1/24/20
+-preparing fall training session
+-installed bwa at user jontoy's /project directory
+-investigated user mfaysal's code compiling issue with TAU c++ compiler 
+-investigated user noha's job crash issue
+-followed up Mathematica installation for an SELU user 
+-updated Tableau source data about the LSU and LONI HPC allocation and usage
+-opened several accounts
+-several other user issues
+
+Weekly 1/17/20
+-followed up user wcao4's WRF job issue 
+-installed trimmomatic at user jontoy's /project directory 
+-Mathematica installation for an SELU user 
+-investigated a data sharing request and explained our policy and alternative solutions in detail 
+-opened several accounts
+-several other user issues
+
+Weekly 1/10/20
+-helped user shadda7 about the issue of simulation speed difference between Mike2 and Smic 
+-investigated user noha's gnuparallel job and its related job extension request
+-helped user wxx6841 with the R lib install
+-completed 2020 mandatory trainings: Louisiana Ethics, Preventing Sexual Misconduct, Digital Accessibility Awareness
+-opened several accounts
+-several other user issues
+
+Weekly 12/13/19
+Weekly 12/20/19
+-installed WRF and WPS for user wcao4 and working on his job issue
+-several user account status check
+-installed MKL wrapper for FFTW3 on Mike2 and compiled user shadda7's code with it
+-early allocation request from gabersyd
+-helped user dbanja2 with his QB2 allocation issue over the phone 
+-opened several accounts
+-several other user issues
+
+
+Weekly 11/29/19
+Weekly 12/6/19
+-installed and tested a user's LAMMPS with USER-OMP and USER-MEAMC enabled
+-investigated a user's Gaussian issue and reinstated the conflict commands in Gaussian module keys
+-prepared the final self-evaluation from for STEM OPT
+-opened several accounts
+-several other user issues
+
+
+Weekly 11/15/19
+Weekly 11/22/19
+-investigated the issue running interproscan5 for user sackettl
+-found alternative of ATLAS for user penny when installing Source Extractor
+-investigated high cpu load issue in user wasicse's SVM job
+-followed up user rburne4's issue of "job takes a long time"
+-several other user issues
+
+
+Weekly 11/8/19
+-attended LSU Tableau monthly meeting
+-updated Tableau source data about the LSU and LONI HPC allocation and usage  
+-tested user "jhard33"'s R code on mike 2 because his code "is dramatically slow"(on bigmem)
+-examined user "rburne4"'s R code because his "job takes a long time"
+-several other user issues
+
+Weekly 11/1/19
+-helped pderosa with the QuantumATK licence issue and introduced how /project works  
+-following up ORCA 
+-opened several accounts
+-several other user issues
+
+
+
+Weekly 10/25/19
+-installed gcc 9.2 system-widely on QB2, SuperMike2 and SuperMIC
+-tested offloading OpenMP to Nvidia PTX targets using locally installed gcc 9.2 and 7.4 as Steve requested  
+-created singularity recipe and image for the same gcc 
+-setup and tested pip and conda env for user "lgutsev" in order to install BoltzTraP2 
+-following up ORCA install & test
+-investigated user "jinikeda"'s request of ADCIRC compilation 
+-opened several accounts
+-several other user issues
+
+
+Weekly 10/18/19
+-helped user "titli" with Modules and R libs install 
+-setup and tested conda env for user "mfaysal" in order to use new trinity and phyluce with Java 1.8
+-followed up and tested user "sli49"'s mpi env 
+-opened several accounts
+-several other user issues
+
+Weekly 10/11/19
+-installed tau, metis and parmetis for user "mfaysal"
+-investigated several Module key issues after Modules was upgraded to 4.2.5
+-disabled some user accounts based on the mailing list bounce action notice
+-opened several accounts
+-several other user issues
+
+Weekly 10/4/19
+-helped user "rburne4" with issues of account access, Modules, R and R libs install 
+-helped user "nelbn" run his job with openmpi inside conda environment on multi nodes
+-investigated a user's mpi4py running issue on multiple nodes
+-installed and tested TOUGH3 for user "alborzfa" and tried hard to train this new user  
+-completed 2019 mandatory trainings: Louisiana Ethics, Preventing Sexual Misconduct, Digital Accessibility Awareness 
+-opened several accounts
+-several other user issues
+
+Weekly 9/27/19
+-helped a user with his R and R lib installation 
+-tested mpi4py issue
+-opened several accounts
+-several other user issues
+
+Weekly 9/20/19
+-investigated a user's installation issue of iqtree with conda environment 
+-preparing and gave fall training session
+-tested user-role based access on the Tableau server 
+-opened several accounts
+-several other user issues
+
+Weekly 9/13/19
+-investigated several users' job issues
+-preparing fall training session
+-redesigned Tableau interface to meet user requirement
+-opened several accounts
+-several other user issues
+
+Weekly 9/6/19
+-following up ORCA install & test
+-preparing and gave fall training session
+-tested containerizing conda environment inside a Singularity container 
+-taught Zach about the account activation 
+-several other user issues
+
+
+Weekly 8/30/19
+-following up ORCA install & test
+-tested installation of Mothur with two different methods
+-preparing fall training session
+-tested LSU Zoom for the remote access to the training 
+-redesigned Tableau interface to meet user requirement 
+-opened several accounts
+-several other user issues
+
+Weekly 8/23/19
+-installed and tested user ramu's dftb+ system-widely and created instruction webpage for it
+-installed and tested magma (a lib for gpu calculation) 
+-preparing fall training session
+-redesigned Tableau interface to meet user requirement 
+-several other user issues
+
+
+Weekly 8/9/19
+Weekly 8/16/19
+-tested user ramu's vasp program and his tcsh environment
+-guided a faculty member how to request allocation for his course and sent him our feedback about his comments
+-updated Tableau desktop version and source data to visualizing the newest LSU HPC SU usage
+-redesigned Tableau interface to meet user requirement 
+-several other user issues
+
+
+Weekly 8/2/19
+-investigated a user's namd crash 
+-investigated user dai's bigmem usage, allocation request etc. 
+-tested a user's garli simulations  
+-working on the website remediation  
+-several other user issues
+
+Weekly 7/26/19
+-helped a user to install vmd plugins  
+-installed and tested downloading with CDS API  
+-working on the website remediation  
+-several other user issues
+
+
+Weekly 7/5/19
+Weekly 7/12/19
+-learned Agparse module in python and helped a user to modify the code
+-helped a user to replace gsort with bash script  
+-installed the latest lammps with GPU support for a user and tested its GPU performance on qb2 
+-installed vmd for a user and explored the installation procedures with conda or traditional make 
+-installed R for a user and got around the error in "make test" caused by non-availability of pdflatex
+-working with the new ansys license admin from Dept of ME about a user's eligibility of using ansys  
+-several other user issues
+
+
+Weekly 6/28/19
+-preparing and gave summer training session
+-helped several new users to start their jobs on the cluster  
+-several other user issues
+
+
+Weekly 6/21/19
+-preparing summer training session
+-installed R packages for several users
+-helped a user to move her R code to the cluster 
+-investigated a user's Pytorch issue on qb2
+-more Tableau workbook to visualize LSU HPC and LONI allocation awards and usage 
+-several other user issues
+
+
+Weekly 6/14/19
+-preparing and gave summer training session
+-installed mask-rcnn on smic for a user and tested it with coco dataset
+-more Tableau workbook to visualize LSU HPC SU awards and usage 
+-several other user issues
+
+Weekly 6/7/19
+-preparing summer training session
+-attended Virtual Residency Workshop 2019 remotely
+-tried to install NeVomics in /home but seems the it is not working on the cluster
+-tested PETSc 3.11.2 installation and modified its installation recipe
+-resolved several Matlab license seat limit issues and updated the hpc website in regard this
+-modified a user's gnuparallel code for his lammps parallel computing 
+-several other user issues
+
+
+Weekly 5/24/19
+Weekly 5/31/19
+-prepared and taught at summer workshop 
+-helped a user with software installation on HPC
+-several other user issues
+
+Weekly 5/17/19
+-preparing summer workshop tutorials
+-helped a user with file transfer and using Qiime2 2019.4 
+-several other user issues
+
+
+Weekly 5/3/19
+Weekly 5/10/19
+-preparing summer workshop tutorials
+-installed and tested Qiime2 2019.4 for a user
+-tested gnu-parallel job performance with labeye's input files
+-solved a problem with module loading and trained user about it
+-several other user issues
+
+
+
+Weekly 4/12/19
+Weekly 4/19/19
+Weekly 4/26/19
+-learn and created Tableau workbook to visualize the LSU HPC SU usage 
+-installed and tested phyluce for a user
+-tested R 3.5.3 on Supermike2 
+-built a modified lammps for a research group
+-resolved a Gaussian dynamic memory issue 
+-tested gnu-parallel job performance with labeye's input files
+-explained gnu-parallel and hpc environment in detail to labeye
+-several other user issues
+
+
+Weekly 4/5/19
+-installed and tested MicrobiomeSeqh for a user
+-explained allocation policy in detail to different users
+-several other user issues
+
+Weekly 3/29/19
+-learn Tableau
+-installed and tested Qiime2 2019.1 for a user
+-followed up the tensorflow installation issue 
+-several other user issues
+
+Weekly 3/22/19
+-began to learn Tableau
+-installed and tested Qiime2R for a user
+-gave Data Analysis with R
+-met a user about the tensorflow installation
+-several other user issues
+
+Weekly 3/15/19
+-added several users from the same group to Gaussian and explained the hpc gaussian policy to them. 
+-had multiple tensorflow installation tests without root privilege
+-handled a job extension request
+-installed BamM into a user's /project 
+-preparing Data Analysis with R
+-several other user issues
+
+Weekly 3/8/19
+-interpreted the Gaussian license agreement about the usage from outside US border
+-disabled several users who could not get our system email. (bounced email)
+-completed a couple of Lynda courses about network foundation
+-installed bcftools for a user, and contacted his advisor about how to deal with the old files in /project
+-met and guided a new user about the HPC environment and mask-rcnn installation
+-several other user issues
+
+Weekly 3/1/19
+-investigated the inter compiler issue, together with Le
+-installed pytorch rcnn benchmark for a user and gave instructions on how to run the benchmark
+-investigated the XSEDE user's Amber error 
+-gave training Introduction to R
+-several other user issues
+
+Weekly 2/22/19
+-helped Cameron Thrash and his student with various bio-application installations
+-completed a couple of Lynda courses about Linux 
+-preparing Introduction to R
+-several other user issues
+
+Weekly 2/15/19
+-took park in various LSU HPC/LONI/XSEDE account managements(login, disable/reenable etc..)
+-completed a couple of Lynda courses about Linux 
+-installed TASSEL and PLINK for a supermike2 user
+-installed Anvi'o for a supermike2 user
+-resolved several job delete issues
+-provided solutions to several users about the issue of tensorflow/keras/pytorch installation with conda  
+-several other user issues
+
+Weekly 2/8/19
+-tested GHC/Cabal/Cabal-install/Darcs on SuperMike2 without root privilege
+-completed a couple of Lynda courses about Linux 
+-provided solution to a user about the issue of tensorflow/keras/pytorch installation with conda  
+-several other user issues
+
+Weekly 2/1/19
+-installed and tested Amber 18 on SuperMike2, SuperMIC and Queenbee2
+-updated contents about Amber on the hpc website 
+-prepared and gave HPC User Environment One training session  
+-tested basic Tensorflow gpu usages and informed a user about his Tensorflow gpu usage issue on SpuerMIC 
+-investigated a parallel processing of netcdf issue
+-several other user issues
+
+Weekly 1/25/19
+-met a user about his Matlab job submission
+-practiced Singularity image building and interacting  
+-had pytorch rnn benchmark tests in Singularity container tests as a user
+-investigated the segmentation fault of a user's CFD simulation, and identified it was the memory stack size problem on supermike2
+-several other user issues
+
+Weekly 1/18/19
+-followed up a zero HPC background user's Matlab job running
+-practiced Singularity image building and interacting  
+-had pytorch rnn benchmark tests in Singularity container tests as a user
+-provided solution to users about the issue of tensorflow/keras/pytorch installation with conda 
+-finished some off-boarding process of Lisa
+-several other user issues
+
+Weekly 1/4/19
+Weekly 1/11/19
+-followed up a zero HPC background user's Matlab job running
+-completed a couple of Lynda courses about VirtualBox and Linux
+-had multiple tensorflow installation tests as a user
+-added the content of tensorflow installation for users on the HPC website
+-updated the content of R installation for users on the HPC website
+-provided solution to three users about the issue of installation with conda due to the hard disk space limit at /home 
+-helped a user to install several R packages manually in his /home
+-several other user issues
+
+Weekly 12/14/18
+Weekly 12/21/18
+-opened several accounts
+-helped a user with COAWST installation
+-updated the BF article about the OTRS queues
+-trained Jielin how to open user account
+-helped a new user to install R in his /home
+-helped a zero HPC background user to get familiar with HPC environment 
+-helped a user to get familiar with HPC environment and install python packages over phone
+-investigated user hmdtech's high load / idle nodes issue. 
+-tested phi codes from the tutorial on simc119
+-several other user issues
+
+Weekly 12/7/18
+-opened several accounts
+-installed and tested RaxML-NG and ParGenes for a user 
+-figured out how to install RStudio on the clusters
+-several other user issues
+
+Weekly 11/30/18
+-opened several accounts
+-helped a user with using matplotlib, setting up X11-forwarding, preparing the pbs script
+-investigated if the same user above can run the python program on multiple nodes
+-helped a new user to install R in his /home
+-spent much time on finding out the feasibility of installing RStudio 
+-explained allocation policy in detail to users
+-installed LAMMPS, atomsk and pizza.py for a user
+-setup and tested two .py scripts for the same user above
+-several other user issues
+
+Weekly 11/9/18
+-opened several accounts
+-helped a user to install gromacs2018 and its dependencies in her /home
+-installed Microsoft R Open in a group's /project
+-investigated the possibility of installing MIKE by DHI on our clusters
+-upgraded cmake system-widely on SuperMIC and QB2
+-several other user issues
+
+Weekly 11/2/18
+-opened several accounts
+-helped a new user to install vaious R and R packages manually in his /home, later in his group's /project
+-investigated a user's fluent program issue
+-updated job script templates on the user guide
+-clean up linux desktop contents 
+-several other user issues
+
+Weekly 10/26/18
+-opened several accounts
+-contacted a faculty to seek if his research/teach can use HPC resources 
+-updated webpage of user software installation, added Python Miniconda installation and adjusted some contents
+-helped a new user to install R in his /home
+-disabled several users who could not get our system email yesterday. (bounced email)
+-several other user issues
+
+Weekly 10/19/18
+-opened several accounts
+-disabled several users who could not get our system email yesterday. (bounced email)
+-completed 2018 mandatory training: Louisiana Code of Governmental Ethics, Preventing Sexual Misconduct
+-gave HPC training session Data Analysis in R
+-trouble-shot a user's R code for parallel computing 
+-several other user issues
+
+Weekly 10/12/18
+-opened several accounts
+-disabled several users who could not get our system email yesterday. (bounced email) 
+-preparing HPC training sessions
+-several other user issues 
+
+Weekly 10/5/18
+-opened several accounts
+-disabled several users who could not get our system email yesterday. (bounced email) 
+-preparing HPC training sessions
+-several other user issues 
+
+Weekly 9/28/18
+-opened multiple accounts
+-follow up some PI's migration from softenv to module 
+-preparing HPC training sessions
+-several other user issues
+
+Weekly 9/21/18
+-opened multiple accounts
+-trouble-shooting various job submission issues: modified and corrected several users' .pbs scripts 
+-explained allocation policy and how to add allocation to several users.
+-helped a user with his own tensorflow installation and the use of hybrid queue on smic. 
+-preparing HPC training sessions
+-installed pizza.py and setup related env variables and alias for a user
+-several other user issues e.g. add several usrs to the LONI Gaussian group etc
+
+Weekly 9/7/18
+-prepared and gave HPC User Environment One training session
+-several other user issues
+
+Weekly 8/17/18
+Weekly 8/24/18
+Weekly 8/31/18
+-help a user with netcdf and cmaq installation on smic
+-installed Circos for a user
+-installed Phonopy for a user
+-send some email for PI's migration from softenv to module
+-opened multiple accounts and sent new users info of the training sessions 
+-installed and tested NetLogo for a user
+-resolved several issues about using softenv and module
+-preparing HPC User Environment One training session
+-installed two R packages for a user
+-several other user issues
+
+Weekly 8/3/18
+-explained "libpsm_infinipath.so.1: cannot open shared object file: No such file or directory" error to several users
+-installed WIEN2K for a user
+-updated Supermike2 user guide about the Softenv replacement 
+-several other user issues
+
+Weekly 7/20/18
+-installed Modeltest for a user
+-resolved a user's tcsh env setting issue
+-installed LMTO for two users
+-several other user issues
+
+Weekly 7/13/18
+-disabled several users who could not get our system email. (bounced email)
+-several other user issues
+
+Weekly 3/9/18
+-disabled several users who could not get our system email yesterday. (bounced email)
+-prepared and gave Wednesday's hands-on practice training session
+-preparing next Wednesday's "Introduction to R" training session
+-Checked a user's script on QB2
+-Helped a user how to run LMTO program on SuperMike2
+
+Weekly 6/29/18
+Weekly 7/6/18
+-resolved several issues about using softenv and module
+-explained allocation policy and how to join/apply to several users.  
+-tested qstat command on supermike and answered a user's questions about the qstat and the job priority 
+-opened multiple accounts and disabled several accounts per user request
+-several other user issues
+
+Weekly 6/15/18
+Weekly 6/22/18
+-preparing for HPC User Env 2 training 
+-tested several software on SuperMike2 using the new software stack
+-went to HPDC 18 conference in the week of 6/15
+-built a modified lammps for a research group
+-solved several user issues when using the new Module on SuperMike2 
+-several other user issues
+
+Weekly 6/1/18
+Weekly 6/8/18
+-preparing for summer workshop materials
+-tested several software on SuperMike2 using the new software stack
+-several other user issues
+
+Weekly 5/18/18
+Weekly 5/25/18
+-preparing for summer workshop materials
+-several other user issues
+
+Weekly 5/11/2018
+-installed and tested SNPEff and SnpSift in a user's /home directory 
+-preparing for summer workshop materials
+
+Weekly 5/4/2018
+-updated hpc website, modifying contents about Eric and Pandora 
+-disabled several users who could not get our system email today. (bounced email)
+-starting to prepare for summer workshop materials
+-several other user issues
+
+Weekly 4/28/2018
+-disabled several users who could not get our system email today. (bounced email)
+-starting to prepare for summer workshop materials
+-several other user issues
+
+Weekly 4/13/2018
+- answered a new xsede user's more questions about job running on SuperMic and Lammps. 
+- Learned how to install the latest Lammps with all standard package 
+- High-performance big data (HiBD) project
+- Prepared my previous research data for Dr. Hung's group for them to write paper
+
+Weekly 4/6/2018
+- answered a new xsede user's various questions about SuperMic, and installed Lammps for the user.
+- investigated qiime2 installation with miniconda
+- study of MPI programming for the summer workshops
+
+Weekly 3/29/2018
+- investigated several LSU HPC/LONI/XSEDE users' login issue and answered their login or account policy questions in detail
+- investigated several users' code compiling and/or programming&job running issues
+- investigated two users' issues of intel/gnu complier usage
+- "concentrated" (couldn't be concentrated actually due to the other trivial work) study of MPI programming for the summer workshops
+
+Weekly 3/23/18
+-disabled several users who could not get our system email on Monday. (bounced email)
+-Installed RSeQC in a user's home directory
+-High-performance big data (HiBD) project
+
+Weekly 3/16/18
+-Opened multiple accounts
+-prepared and gave Wednesday's Introduction to R training session
+-Worked on SAS update on Philip 
+
+Weekly 2/23/18
+-Opened multiple accounts
+-Installed STAR in a user's home directory
+-Working on SAS installation 
+
+Weekly 2/16/18
+-Opened multiple accounts
+-Checked user's R-3.4.3 job running on Philip
+-Prepare practice training session
+
+Weekly 2/9/18
+-Opened multiple accounts
+-Installed PandaSeq and FastQC for a user in her home directory of SuperMike2
+-Installed R-3.4.3 for a user in her home directories of SuperMike2 and Philip
+-Prepared and gave Wednesday's HPC User Environment One training session
+
+Weekly 2/2/18
+-Opened multiple accounts
+-Installed GATK for two users in their home directories  
+-Investigated and deleted some old pending accounts in the unborn land
+-Preparing next week's HPC User Environment One training session 
+
+Weekly 1/26/18
+-Opened multiple accounts, especially for two classes
+-Solved an xsede user's Gromacs issue
+-Installed qiime in a user's home directory 
+-Updated website about the gcc isntallation without root 
+
+Weekly 1/12/18
+-Answered several phone calls about the account and allocation 
+-Opened multiple accounts, especially for the BIOL4800 class
+-High-performance big data (HiBD) project
+
+Weekly 11/10/17
+-installed Graphviz (a python package) system-widely
+-disabled several users who could not get our system email yesterday. (bounced email)
+-answered several tickets about the sofeware usage, node specification and allocation policy in detail 
+-Will be gone next week for SC17.
+
+Weekly 12/15/17
+-High-performance big data (HiBD) project
+-user runtime issue
+
+Weekly 11/03/17
+-troubleshooted a qb user's software installation issue
+-explained the way to run tensorflow and the head node use policy to a new user
+-followed up and closed several other old tickets 
+
+Weekly 10/27/17
+-investigated a user's Detonate installation issue 
+-finished the troubleshoot of the Delft3d installation issue
+-followed up and closed several old account application tickets 
+
+Weekly 10/20/17
+-investigated a user's Smoke4.5 installation issue 
+-continue to troubleshoot a smic user's Delft3d  installation issue
+-had in-person help session with one user
+
+Weekly 10/13/17
+-helped with installing Python dask and distributed modules 
+-troubleshooted a smic user's software installation issue
+-had in-person help session with one user
+
+Weekly 10/06/17
+contacted 40 faculty members over the phone to get them respond to the Grants Survey sent out by Le
+troubleshooted a user's WPS installation issue
+gave a training of introduction to R
+various other issues
+
+Weekly 9/29/17
+-investigated several issues about the Linux use for a user
+-updated HPC FAQ webpage  
+-prepared for the training next week  
+
+Weekly 4/13/17
+-investigated a series of WRF job that had high load issue, together with Xiaoxu
+-helped with installing python module circulator 
+-troubleshooted a smic user's gromacs job failing issue  
+-processed some new user applications
+
+Weekly 4/21/17
+-investigated a R package installing error on Mike
+-helped with installing python module gat and networkx into home directory for two different users 
+-helped with installing xmgrace into user's home directory 
+
+Weekly 4/28/17
+-investigated a user issue of loading Python package for the C++ binary on Mike, together with Xiaoxu
+-guided several users to install Python packages under home directory with pip 
+-explained account and allocation policy, as well as how to apply for allocation to the user's PI who definitely needs to know these by phone 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

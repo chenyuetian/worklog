@@ -1,0 +1,974 @@
+Weekly 10/13/23
+Weekly 10/20/23
+-updated TSCC node list with Chris
+-troubleshot a Globus authentication issue for user mdothard together with Nicole ticket #31247
+-investigated why all nodes were marked as down in lsjobs together with Chris Ticket #31231
+-investigated an illegal Instruction issue when running a compiled binary for user  achandrasekaran Ticket #31217
+-investigated an illegal Instruction issue when running a code on certain hotel nodes for user helia Ticket #31163
+-examined and modified user cscarpenter's job script to fix the stdout and stderr files copying issue and the command not found issue Ticket #31109
+-guided user ekunselm installing trinity bowtie2 with conda, as well as correctly activating conda environment in the batch job #31105
+-installed and tested swash for user atbarnes Ticket #31001
+-tested a visualization component (anvi'o) on the reverse proxy server together with Marty Ticket #30926
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-opened several accounts together with Nicole and Chris
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 9/22/23
+Weekly 9/29/23
+Weekly 10/6/23
+-tested downloading speed from speedtest.tele2.net, a good tool for curl download performance test Ticket #30596
+-installed and tested swash  Ticket #31001
+-guided a new group about the file permission and sharing in their /home directories Ticket #30091
+-investigated a slow file transfer issue Ticket #30104
+-guided a new PI about running Matlab and Gaussian in parallel, and discussed the possible purchase of GaussView Ticket #30314
+-tested several fild transfer tools such as scp, sftp, rsync and bbcp as alternative of bbftp Ticket #30550
+-investigated an early job termination, abnormal disconnection and improper compute node ssh issues Ticket #30655
+-tested slurm job array under TSCC 2.0 and answered several other questions for user hjiao Ticket #30697
+-helped user jbendik with staring Jupyter Notebook with Galyleo and running PBS job array Ticket #30870
+-installed gromaces 2023.2 for user mgshehata Ticket #30751
+-tested why a conda env couldn't start when the batch job was running Ticket #30930
+-reinstalled numactl for user nagrayson Ticket #30931
+-investigated launching Galyleo with yml file, and ended up with creating the conda environment with yml, then running Galyleo Ticket #30699
+-had Zoom meetings with two new PIs respectively
+-opened several accounts with Nicole and Chris
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+
+Weekly 9/1/23
+Weekly 9/8/23
+Weekly 9/15/23
+-installed funannotate in conda env for user nagrayson Ticket #30298
+-investigated a remote host identification change that might be because of the dated ssh key Ticket #30251
+-modified a job script running NAMD to avoid multiple simulation on the same GPU card Ticket #30344
+-investigated a curl downloading issue from the external ftp server Ticket #30338
+-followed up with user mbookwala about job submission, fenicsx running in parallel Ticket #30065
+-prepared openmp and mpi examples for TSCC 2.0
+-prepared and taught TSCC 2.0 workshop for invited users
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 8/18/23
+Weekly 8/25/23
+-investigated a Singularity directory creation issue for user zfussy issue Ticket #30214
+-modify the workflow for user hjiao to submit bash job with flags Ticket #30121
+-examined a "no dimension" error when running CIBERSORTx job using Singularity Ticket #30088
+-installed and tested fenicsx for user mbookwala Ticket #30065
+-preparing introduction to tscc 2.0 for the test cluster users
+-opened several accounts with Nicole and Chris
+-coordinated several nodes decommission with system admins, OPS, finance office and PIs
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 8/4/23
+Weekly 8/11/23
+-investigated a job submission with unkown origin Ticket #29975
+-examined and explained nodes status to two groups Ticket #29937 #29973
+-investigated how GNU screen can resume after the interactive session is ended, and installed Foxit Reader Ticket #29949
+-explained in detail to user how to resume a disconnected interactive session Ticket #29865
+-investigated a case of mixing stdout and bwa output file  Ticket #29820
+-investigated a long wait loading of libcudart and libcudnn in the TensorFlow running Ticket #29814
+-opened several accounts with Nicole and Chris
+-coordinated several nodes decommission with system admins, OPS, finance office and PIs
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+
+Weekly 7/14/23
+Weekly 7/21/23
+Weekly 7/28/23
+-coordinated a maintenance that affected Hopper group Ticket #29466 
+-tested how to connect to TSCC with FileZilla Ticket #29454
+-explained to the users how lsjobs and pbsnodes work in detail Ticket #29488 #29546
+-resoved several errors that were because of the full /home disk Ticket #29514 #29758
+-tested how to connect to Dropbox on TSCC with rclone Ticket #29588
+-worked with system admins to fix and update a delay of start and incorrect SU reservation issue
+-coordinated several nodes decommission with system admins, OPS, finance office and PIs
+-attended PEARC 23
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+
+Weekly 6/30/23
+Weekly 7/7/23
+-diagnosed why user zim001 had a file save error when using Galyleo Ticket #29284
+-diagnosed why submitted jobs could not start or took long time to start Ticket #29187 #29199 #29110 #28877 #29144
+-investigated interruption and then long-time installation of anaconda for user dkhatri Ticket #29056
+-investigated a container corruption issue for user acalambur Ticket #29155
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+
+Weekly 6/9/23
+Weekly 6/16/23
+Weekly 6/23/23
+-helped user y8yuan to test basenji_train.py and configured tensorflow for using GPU Ticket #28844
+-investigated why tscc-9-16 was crashed multiple times by user ddeaquin's jobs with Chris Ticket #28748
+-investigated the jupyter notebook launch issue for user zim001 with Marty Ticket #28819
+-investigated an error while compiling the LAMMPS for user xig126 Ticket #28872
+-investigated why user shirakis's Amber job cannot start and could not use GPUs -Ticket #28996
+-helped user skodera with interactive job submission and node availability check   Ticket #28769 #28883 #29110  
+-opened several accounts with Nicole and Chris
+-HPC systems monthly meeting
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 5/26/23
+Weekly 6/2/23
+-explained in detail why the jobs cannot start to jhc103, and give advice how to properly allocate memory for the job Ticket #28564
+-recommended a better R package loading and usage way than in conda. Ticket #28541
+-helped user nagrayson to install and use rnabloom Ticket #28733
+-followed up the heavy I/O on lustre Ticket #28507
+-worked with Haisong and Chris for user sakundu's high loading jobs that affacted the Lustre Ticket #28527
+-investigated why Palmer group users could not start jobs in their home queue, and explained to user bbjohnson how the PBS job array works Ticket #28699 #28698 #28677
+-installed java for user haas for restarting the use of a dated gigaspace Ticket #28577
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 5/12/2023
+Weekly 5/19/2023
+-investigated a case that jobs submitted to a home queue start over every 10 mins, with Chris  Ticket #28241
+-investigated a heavy I/O on Lustre caused by user sakundu, and collaborated with system admins to identify the problem Ticket #28527  Ticket #28507
+-helped user a1love install rdkit with conda, and provided more informatio about the previous Rosetta installation  Ticket #27917
+-diagnosed why user bay001's software couldn't ecognize GPU nodes with Galyleo command Ticket #28387
+-installed pargenes with singularity (also mamba) and tested for user nmkoch Ticket #28359
+-tried to install new seurat for user kecavagn and restored the previous seurat with Chris Ticket #28459
+-diagnosed why user sel041 cannot start galyleo anymore, and found mambaforge cannot start the galyleo env installed by miniconda3 Ticket #28283
+-opened several accounts with Nicole and Chris
+-taught introduction to Singularity
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+
+Weekly 4/28/2023
+Weekly 5/5/2023
+-provided allocation status and node warranty to cornuelle group Ticket #28015
+-installed devtools and lava for user rcupertino and explained why conda affected the installation process Ticket #28005
+-explained to user zfussy why the submitted jobs were in the queue Ticket #27995
+-investigated slow performance in A100 GPU reported by usr prprabha Ticket #27980
+-investigated a Matlab error for user wez078 Ticket #27884
+-diagnosed why user z8jiang cannot login Ticket #28186
+-investigated why user jhc103's job stopped running in hotel but can run in the home queue Ticket #28019
+-helped a user to install openvdb and paralesto
+-update system-wide installed alphafold to 2.3.2 and tested with usr yagu Ticket #27727
+-preparing an allocation list including allocations need to be moved to tscc 2.0
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-Spack weely meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 4/14/2023
+Weekly 4/21/2023
+-setup and troubleshot ssh key for non-ucsd users and allocated SUs to a guest allocation with Chris Ticket #27695
+-helped user a1love compiling Rosetta, and introduced job submission and software stack on TSCC and conda installation Ticket #27917
+-investigated and tested gromacs GPU simulation, and explained gpu-hotel queue in detail for user hxiu Ticket #27875
+-got the billing information from the accounting system for kinglab Ticket #27858
+-handled several pbs server crash reports with Chris Ticket #27822 #27821 #27792
+-investigated snakemake and brainxcan package installation in conda and R for user spakala Ticket #27819
+-investigated how the double colon in PATH affected the find command, and ask to fix it, and suggested user to use lfs on lustre Ticket #27809
+-found why log files kept being generated for user sel041 Ticket #27756
+-taught introduction to tscc 2.0
+-preparing an allocation list including allocations need to be moved to tscc 2.0
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-HPC systems monthly meeting
+-Spack weely meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 3/24/2023
+Weekly 3/31/2023
+Weekly 4/7/2023
+-tested user sel016 with various cores to determine why the original jobs were terminated early. Ticket #27409
+-guided user ifrankel how to run lammps and improve the job script Ticket #27484 and also introduced other users to his group in private 
+-investiaged a case of improper use of pdafm node, and kept both sides updated Ticket #27499  Ticket #27505
+-processed two yubikey replacement requests with multiple SDSC staff Ticket #27602  Ticket #27621
+-installed terra and devtools and their dependencies for user spakala, and discouraged installing R package in conda Ticket #27627
+-explained why directly installing cp2k from source is difficult, and provided an official image as alternative to user s1dasgupta Ticket #27637 
+-preparing introduction to tscc 2.0
+-preparing an allocation list including allocations need to be moved to tscc 2.0
+-began to send emails to PIs with external mounts 
+-attending AI Bootcamp remotely every Tuesday and Thursday
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-Spack weely meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 3/10/2023
+Weekly 3/17/2023
+-examined why some files couldn't been removed during anaconda uninstallation in user b5taylor's home directory Ticket #27182
+-helped user eafrancis how to start Singularity and interactive job in detail  Ticket #27186
+-examined how "qstat -f $PBS_JOBID" can make sure the scripts are running efficiently, and asked user bil022 to monitor their jobs Ticket #27211
+-investigated user syl004's R installation process, and persuaded the user that the vi and nano commands was ran in R Ticket #27222
+-helped user agarbuzov with two STAR error messages, one caused by misspelled directory name and another by disk quota exceeded  Ticket #27290
+-got to know a data uploading request from a  physical storage device to tscc, and provided options to user aksharma1 Ticket #27353
+-preparing an allocation list including allocations need to be moved to tscc 2.0
+-began to send emails to PIs with external mounts 
+-attending AI Bootcamp remotely every Tuesday and Thursday
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-Spack weely meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+ 
+Weekly 2/24/2023
+Weekly 3/3/2023
+-created an external stroage list with Chris, and reached out to users about two unclear storages  Ticket #27102  #27089 
+-tested and optimized user amalv's job script and gromacs for running with GPUs Ticket #27087
+-helped user prprabha for running simulations with namd2 on CPU and GPU nodes Ticket #27145
+-had more conversations with the new PI and Subha Ticket #26793
+-discussed with user j1chin how to manage interactive jobs after the disconnection of the screen Ticket #27050
+-answered user y8yuan multiple questions about the GPU node and job command Ticket #27029 #26970 #26503
+-investigated and changed the group write permission for user cbwall Ticket #27025
+-investigated a R crash and MPI process hanging for user jjmered Ticket #27019
+-created a new singularity container for the lastest alphafold2 Ticket #26947
+-installed several R packages for user jhdominguez Ticket #26946
+-worked with security group about a compromised tscc account Ticket #26841
+-setup and talked to a new hotel group Ticket #26804 #26484 #26978
+-helped ren-group to buy more SUs and place order of two new nodes wish Subha and Julius Ticket #26939
+-notified users whw006 not taking all of the GPU cards, and suggested how to improve job script for gpu-hotel jobs -Ticket #27088
+-attending AI Bootcamp remotely every Tuesday and Thursday
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-Spack weely meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
+
+Weekly 2/10/2023
+Weekly 2/17/2023
+-tested and then reached out to Palmer group about their new nodes in production, as well as informed finance office  Ticket 26093
+-investigated napari GUI installation with pip and conda, ended up with Singularity Ticket #26861
+-guided user xiangz how to start Galyleo and use it with conda environment Ticket #26843 
+-notified yeo-group about how to avoid the account being hacked Ticket #26841
+-had a startup conversation with a new PI and her students with Subha Ticket #26793
+-installed devtools for user s1chin Ticket #26688
+-had a training with the new PI of behrou group and his students, and followed up with multiple software usage questions Ticket #26455
+-attending AI Bootcamp remotely every Tuesday and Thursday
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-HPC systems monthly meeting
+-TSCC 2.0 planning meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+Weekly 1/27/2023
+Weekly 2/3/2023
+-introduced how to access liblzma through self-installed xz lib Ticket #26453
+-investigated a login issue for user  jeinstei Ticket #26342
+-investigated a resource violation issue Ticket #26333
+-notified and followed up about several new nodes Ticket #26344 #26345 #26354
+-answered several galyleo users about the proxy server failure Ticket #26317  #26314 #26309 #26307 #26304 #26298
+-notified a user prprabha not taking all of the A100 nodes, and suggested how to improve job script for gpu-hotel jobs Ticket #26506
+-guided how to use the vep 96 cache for mouse, and downloaded the cache for GRCh38 for user mzhivagui Ticket #26485
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-HPC systems monthly meeting
+-TSCC 2.0 planning meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+
+Weekly 1/6/2023
+Weekly 1/13/2023
+Weekly 1/20/2023
+-resolved a login issue caused by broken .bashrc file for user mcburns with Chris Ticket #25991
+-investigated user xix031's jobs taking too much resources Ticket #26010
+-installed and tested multiple R packages for user cbwall Ticket #25923
+-resolved a complaint from user using pdafm node by correcting the shared memory usage by another user Ticket #26129  Ticket #26133
+-cloned busco to user nagrayson's own space, and fixed an error with "--update-data" option Ticket #26030
+-followed up with several users about slowness in the lustre system Ticket #26138 #26164  #26167  #26168
+-installed R packages for user kutan under R 3.6.1  Ticket #26053
+-updated blast to the newest 2.13.0 system-widely for user to submit a sequence data file to the NCBI blast server Ticket #26078
+-guided a user how to start a large job in the hotel queue, and then diagnosed why user's job cannot start (insufficient SUs) Ticket #26011
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+Weekly 12/16/2022
+Weekly 12/23/2022
+-installed R 4.2.2 system-widely in order to update SAIGEgds for user b3peng Ticket #25793
+-investigated a R kernel crash case in Jupyter Notebook Ticket #25679
+-resolved a login issue with ssh key as well as password for user hiyoothere  Ticket #25536
+-updated an account and explained why he didn't need a new account when AD is changed with Nicole Ticket #25083
+-investigated user prprabha's jobs on A100 node and gave advice about better use of GPUs Ticket #25724
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-HPC systems monthly meeting
+-TSCC 2.0 planning meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+Weekly 12/2/2022
+Weekly 12/9/2022
+-followed up Globus requests with Nicole and Scott Ticket #24994 #25055 #25499
+-followed up the segfault error using Gurobi, user found fig.savefig() line -- saving plots in Julia -- leads to segmentation fault error Ticket #25009
+-replied a user complain about another user taking many GPUs in the shared GPU hotel queue Ticket #25161
+-investigated user rwu1's jobs in gpu hotel queue and gave advice about better use of GPUs on different GPU nodes Ticket #25455
+-installed ggplot2 for user jpburkhardt and told the user how to install R package in his own space Ticket #25470
+-investigated a user's oom issue and introduced how to ask for the hotel nodes Ticket #25491
+-investigated "No space left on device" during icm-3.9-3a for a PI, and found the exact temp space during the test, and told PI not use login node for the installation Ticket #25564
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+
+weekly 11/11/2022
+weekly 11/18/2022
+weekly 11/25/2022
+-reached out to Palmer and Epigen groups to promote the new nodes Ticket #25188 #24937
+-followed up the job stopped running issue, changed tcp communications to vader in OpenMPI and tested for a few days Ticket #24871
+-troubleshot libstdc++.so.6: version `GLIBCXX_3.4.26' not found caused by R package “shiny” installed by conda  Ticket #25354
+-created a trial account and guided the user about ssh login Ticket #25326
+-installed nnumactl in user nagrayson's home directory to fix the issue with Masurca package  Ticket #25311
+-troubleshot segfault caused by R package installed by conda, reinstalled with install.packages and tested for user b3peng Ticket #25058
+-investigated and trouble shot the job queued problem and explained to the user Ticket #25289
+-found and sent out the notice to user who was taking all of the A100 GPU cards Ticket #25222
+-installed and tested Amber 22 in gpalermo's home directory Ticket #25012
+-investigated user dcalcagn's project write permission request and explained why we don't do this in general and offered alternatives Ticket #25184
+-investigated a segfault error using Gurobi Ticket #25009
+-replied multiple login issue reports  Ticket #25158 #25161 #23157 #25144 #25141 #25140 #25164
+-attended SC22 remotely, learned parallel I/O in practice and HPC in AWS cloud 
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-HPC systems monthly meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+
+weekly 10/28/2022
+weekly 11/4/2022
+-found out why jobs were hand in the queue for a palmer group user Ticket #24854
+-reached out to Ong and Reese groups about their new nodes in production, as well as informed finance office  Ticket #24849 #24843
+-coordinated several nodes decommission with system admins, OPS, finance office and PIs
+-checked with gibbs users that no more jobs can be submitted to home-gibbs as all of their nodes have retired Ticket #24863
+-investigated a job stopped running issue Ticket #24871
+-tested job array for a user's 4 independent tasks Ticket #24885
+-investigated segfault error using Gurobi Ticket #25009
+-investigated segfault error using R packages from conda Ticket #25058
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+
+weekly 10/14/2022
+weekly 10/21/2022
+-preparing for and taught TSCC webinar: Singularity
+-preparing for ColdFront 
+-investigated a case of slow job in hotel queue from user malbassam Ticket #24551  #24605
+-investigated and got to know the timeout setting in galyleo from Marty Ticket #24639
+-investigated and tested a command that couldn't run for user ewest Ticket #24612
+-found out why user slsison's jupyter notebook job couldn't launchTicket #24790
+-answered user skuthyar the efficient way to use units/allocation Ticket #24379
+-investigated slow jobs on some particular GPUs on certain nodes with Chris Ticket #24737
+-opened a trial account for a new user and gave instruction in detail to use hpc job system and matlab Ticket #24475
+-investigated a qiime2 installation case in a user's home directory, and found the user's anaconda3 needs to be reinstalled Ticket #24628
+-guided a user how to start RStudio and troubleshot the x11 forwarding issue Ticket #24672
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-TSCC ticket meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+weekly 9/30/2022
+weekly 10/7/2022
+-told user ecoonahan how to get Jave version and how to install and setup Java Ticket #24531
+-explained busy status of the nodes to yeo-group and made suggustions Ticket #24439
+-investigated user mdbarnes's aws s3 download request with Scott Ticket #24254
+-explained how conda workd for user yoy006 Ticket #24217
+-troubleshot a file transfer issue from Amazon s3 Ticket #24437
+-troubleshot the home storage space issue of user mthoemmes Ticket #24360
+-followed up with user kufareva why she cannot get second account and why we only allow external amount from RDS  Ticket #23285 
+-investigated the lastest Namd3 alpha installation on TSCC environment Ticket #24137
+-investigated why user h3jia's first job was failed, then why the later jobs couldn't start with Chris Ticket #24433
+-answered questions about how to use Matlab in detail from user hep005 Ticket #24427
+-preparing for TSCC webinar: Singularity
+-preparing for ColdFront 
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-TSCC ticket meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+
+weekly 9/16/2022
+weekly 9/23/2022
+-followed up with the PIs, finance office, system admins about the TSCC decommission
+-followed up user b3peng's aws s3 credential problem Ticket #23825
+-followed up and corrected user gsah's job script to run bowtie2 Ticket #23834
+-explained in detail to user kufareva how the storage system works and the reason why they cannot install software on their home node Ticket #23285
+-explained in detail to user nmkoch how the job queue and submission sytem works and the reason why her job cannot start at once Ticket #23794
+-installed vsearch system-widely Ticket #24079
+-followed up with system admins and user services about TSCC Globus endpoint setup 
+-preparing for TSCC webinar: Singularity
+-preparing for ColdFront 
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-TSCC ticket meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+
+
+weekly 9/2/2022
+weekly 9/9/2022
+-reached out to user mbarnes about testing their group's new DDN, with Chris Ticket #23691
+-reached out to user sbaner about the exceeded ssh connection to the cluster Ticket #23709
+-investigated batch job failure submitted by snakemake for user hsher Ticket #23716
+-followed up a S3 downloading issue with user mbarnes with Scott Ticket #23771
+-investigated user b3peng's aws s3 credential problem Ticket #23825
+-modified user gsah's job script to run bowtie2 Ticket #23834
+-installed R package Seurat and its dependencies for user kwchan Ticket #23869
+-helped user  kwu030 with amber user environment, and then choose the number and type of GPU cards Ticket #23780
+-explained to user nmkoch how to access the stderr and stdout at job runtime Ticket #23818
+-followed up with system admins and user services about TSCC Globus endpoint setup 
+-investigated Mathematica + NCAlgebra code issue for user zec045 with Jerry Ticket #23698
+-preparing for TSCC webinar: Singularity
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 8/26/2022
+-followed up Gurobi license error for user fkucuksayacigil with Chris Ticket #23561
+-investigated user y8yuan's /home usage and gave advice about file removal and conda cache file redirection Ticket #23584
+-explained the job priority system to user marosenf, and give suggestions about the user's pending job Ticket #23625
+-investigated two group permission requests from Allen group and Palmer group   Ticket #23606 #23574
+-followed up three Globus transfer issues with the system admins and users Ticket #23507 #23358 #23274
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 8/19/2022
+-followed up how to run multiple Gromacs simulations with GPU aross the node for user asaha011 Ticket #23328
+-explained the plans of bring back old nodes and answered follow up questions to Ong group Ticket #23380
+-investigated two user cases about job restarting itself with error code -3 with Chris  Ticket #23478  #23430
+-investigated Gurobi license error for user fkucuksayacigil with Chris Ticket #23561
+-investigated user mgshehata's user environment to fix the PMX running issue Ticket #23470
+-explained the web session timeout issue and the R code running to user cnmason Ticket #23504
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+
+weekly 8/12/2022
+-investigated user pratap's job submission and gave advice about it Ticket #23424
+-investigated how to run multiple Gromacs simulations with GPU aross the node for user asaha011 Ticket #23328
+-explained the node decommission in detail to Ong group Ticket #23380
+-investigated the login issue for user akao Ticket #23402
+-had HPL, Amber and STREAM tests on 28 new nodes, and notified PI and finance office 
+-HPC systems monthly meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 7/29/2022
+weekly 8/5/2022
+-carried out HPL, STREAM, and Amber tests on tscc-gpu-14-22,24,26,28
+-built and tested a neusomatic Singularity image for user xiy010 Ticket #23205
+-tested multiple simulations of gromacs with system-widely installed gromacs 2021.1 for user asaha011 Ticket #23328
+-toubleshot a singularity permission issue for user malbassam   Ticket #23165
+-replied multiple tickets about login failure and job start waiting due to the maintenance Ticket #23300 #23288 #23293 #23303 #23304 #23231 #23317
+-installed R packages tximport and DESeq2 for user jpburkhardt Ticket #23085
+-toubleshot why user rchitsazi's jobs are 3.4 times slower on the 3090 GPU than 2080 GPU. Ticket #23117
+-toubleshot why user cnmason's galyleo job could not start and explained how to allocate memory in the job with Chris and Eva Ticket 23229
+-TSCC 2.0 planning meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+
+
+weekly 7/22/2022
+-followed up some requests about interactive job on TSCC and Expanse from user sal004 Ticket #22800 #23051
+-tested and fixed 'GLIBCXX_3.4.20' Missing error for user jpburkhardt Ticket #23012
+-solved user shl457's conda conflict error Ticket #22948
+-explained in detail to user xnuqui that why the job cannot start and how to choose the correct allocation for gpu jobs Ticket #22990
+-investigated why user mkapur's job violates resource utilization policies, asking not to specify memory Ticket #23090
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 7/15/2022
+-tested pytorch install and guided user pkulzq how to use galyleo on Expanse with Mahi xsede ticket 164188
+-installed and tested the newest version of geos and rgeos for user s1chin Ticket #22700
+-investigated the error  unknown queue home-xxx with Chris and Eva   Ticket #22949 #22920
+-tested conda install  python-swiftclient for user jpburkhardt Ticket #22926
+-investigated a node-specific MPI error for user hagnew's lammps code Ticket #22906
+-installed and tested velocyto with conda for user luw060 Ticket #22925
+-processed a job extension request from user dec037 with Chris and Eva Ticket #22863
+-opened some trial accounts and followed up with user sal004's group Ticket #22800
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-TSCC training planning meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 7/1/2022
+weekly 7/8/2022
+-carried out HPL, STREAM, IOR, tensorflow and Amber tests on tscc-10-9 and tscc-gpu-10-8
+-troubleshot user cgucci's file permission and job submission issue Ticket #22777
+-sent announcement about the TSCC maintenance to the tscc mailing list and answered multiple questions about it
+-opened some trial accounts and followed up with user sal004's group Ticket #22800
+-HPC OPS weekly meeting
+-TSCC 2.0 planning meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+
+weekly 6/17/2022
+weekly 6/24/2022
+-tested Alphafold performance on the new node, and asked for solution for the multimer case Ticket #21419
+-helped user saguilargomez load Stata, troubleshoot Stata error and monitor the status of Stata job Ticket #22387 #22599 #22588
+-tested a RStudio Singularity image for user szu Ticket #22388
+-troubleshot why user nagrayson's gave the error from copy error  Ticket #22422
+-tested system wide installed bcf2fastq for user cscarpenter with Jerry Ticket #22467
+-reached out to several staff to sovle the connection to a ftp server Ticket #22370
+-gave Globus transfer to several users with Nicole Ticket #22383 #22431
+-downloaded and installed a vep-96 cache mus_musculus for user mzhivagui Ticket #22598
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-TSCC 2.0 planning meeting
+-had a Zoom meeting with Kathleen (Kit) Curtius Ticket #22527
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+
+weekly 6/10/2022
+-followed up an issue of bavaria with user y8yuan Ticket #22128 
+-investiaged the segmentation fault when running python for user kyc059 Ticket #22332
+-investigated the snakemake workflow for user amahnert, and suggested how to switch from sbatch to qsub in the workflow Ticket #22362
+-installed devtools and sqjin/CellChat for user kecavagn Ticket #22072
+-TSCC 2.0 planning meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 6/3/2022
+-diagnosed jupyter notebook kernel crash for user y8yuan, and found memory usage lead the crash Ticket #22128 
+-modified Gromacs wrapper for user mgshehata Ticket #22062
+-installed Stack for user malbassam, and remindered user to install pandoc with conda Ticket #22127
+-anwsered multiple tickets from a new user cscarpenter about file transfer Ticket #21814 #21967 #21993 #21792
+-TSCC 2.0 planning meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 5/27/2022
+-carried out HPL STREAM tests on Ludmil's new nodes tscc-14-0..20
+-reached out to user pjagann who took and idled the only 2080Ti node in hotel queue Ticket #22029
+-tried to download a reduced database of alphafold and tested it for user w1ma Ticket #21557
+-tested vep-106 and provided installation and test suggestions to user burcak Ticket #21738
+-installed PMX, and provided job script for user mgshehata Ticket #22062
+-had a Zoom meeting with Shurin Lab Ticket #22030
+-anwsered multiple tickets from a new user cscarpenter about file transfer Ticket #21814 #21967 #21993 #21792
+-updated the retired nodes information in the Sharepoint
+-TSCC 2.0 planning meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 5/20/2022
+-carried out HPL test on Ludmil's new nodes tscc-14-0..20
+-reached out to the user jis215 about his jobs crashed tscc-2-62 with Eva Ticket #21880
+-downloaded vep-106 and its cache, installed and tested vep-106  Ticket #21738
+-tried to optimize alphafold for user w1ma Ticket #21557
+-TSCC 2.0 planning meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+
+weekly 5/6/2022
+weekly 5/13/2022
+-carried out STREAM test on Ludmil's new nodes tscc-14-0..17
+-downloaded vep-96 cache, tested how it works with vep-96 and provideed the result to user burcak  Ticket #21738
+-fixed a user's .bashrc to display the hostname info correctly Ticket #21784
+-answered user kcreamer's questions in detail about stratus node, interactive job, job walltime, lsjobs etc. Ticket #21777
+-tested an alphafold permission issue for user w1ma Ticket #21557
+-reached out to the user mbreuss about his jobs crashed tscc-2-62 with Eva Ticket #21858
+-reached out to the DEA/DEC for creating STR for retired nodes with UCID Ticket #19801 #19802 #21816
+-TSCC 2.0 planning meeting-TSCC ticket meeting
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-HPC systems monthly meeting
+-opened several accounts with Nicole and Eva
+-attended several new staff interviews and wrote the feedback  
+-several other user issues
+
+
+weekly 4/29/2022
+-tested installation of seurat in conda  Ticket #21470
+-followed up a slowness of file opening/editing on lustre  Ticket #21298
+-provided user hsethuram detailed info about gpu, hotel, cuda libs Ticket #21481
+-solved user hjiao's makefile issue by correcting the user environment Ticket #21536
+-processed several account and SU purchase requests with Julius, Nicole and Eva Ticket #21502
+-built singularity image of alphafold, and downloaded its large databases and tested if alphafold can be used on TSCC Ticket #21419 Ticket #21557
+-TSCC 2.0 planning meeting-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 4/22/2022
+-solved user clee2's trouble of launching jobs on tscc-gpu-5-5 with Chris and Eva Ticket #21401
+-tried to solve user w1ma's trouble of launching jobs on tscc-13-20  with Eva Ticket #21401
+-followed up Luo's nodes status after their retirement with Luo and several other people in his department Ticket #21322 #21302
+-tested multiple core VASP jobs running for user j1qi  Ticket #21346
+-tested R script for user aopatel, and guided how to allocate larger memory Ticket #21356
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 4/8/22
+weekly 4/15/22
+-gave instruction in detail about TSCC system, R, RStudio and Jupyter Notebook to user jik006  Ticket #21273
+-investigated a slowness of file opening/editing on lustre  Ticket #21298
+-followed up Luo's nodes status after their retirement with Luo and several other people in his department Ticket #21322 #17997
+-handled an external funds for SU purchase request Ticket #21323
+-followed up with system admins about their script purging trial accounts, and notified users to change their group name
+-found a matlab license server problem with Jerry Ticket Ticket #21241
+-processed several SU purchase requests with Julius and Eva Ticket #21131 #21218
+-helped user skuthyar to modify the job script and environment to run salmon Biostring and metawrap Ticket #21227 #21122 #21320
+-answered user aarslan's questions in detail about stroage, screen session, job walltime limit etc.  Ticket #20307
+-investigated and fixed user wcwong's error on using self-compiled pip Ticket #21089
+-attended two new staff interviews and wrote the feedback  
+-SDSC General Staff Meeting
+-TSCC 2.0 planning meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-Expanse ticket meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 4/1/22
+-modified, installed and tested 16sPIP for user skuthyar Ticket #20977
+-gave instruction in detail about TSCC account and allocations to user ssroige's group  Ticket #20982
+-followed up and examined user xgarciaa's jobs script running Matlab icket #20891 
+-followed up and entered PIs' response to the sharepoint about their node decomission. Ticket #19803 #19807 #19808 #19843 #19844
+-entered the information of nodes that have warranty in 2021 - 2025 to the sharepoint  
+-had a Zoom meeting with user kecavagn about RStudio, Jupyter Notebook and storage Ticket #20862
+-had a Zoom meeting with user akhandek about his PBS job array Ticket #19611
+-TSCC 2.0 planning meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-Expanse ticket meeting
+-opened several accounts with Nicole and Eva
+-several other user issues
+
+weekly 3/25/22
+-followed up NVLink issue in home-hopper queue with the user and system admins 
+-gave instruction in detail about TSCC system, matlab to user xgarciaa  Ticket #20891
+-worked on parallelization of user akhandek's independent commands with PBS job array Ticket #19611
+-group meeting with new user Rob Lampe
+-TSCC 2.0 planning meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+weekly 3/18/22
+-made suggestion about reserving gpu nodes in the gpu-hotel queue to user hsher, and possibly upgrade gpu driver for using new cuda Ticket #20694
+-welcomed Dr. Irina Kufareva's research team using TSCC condo, and facilitated the start Ticket #20750
+-examined the ssh key login issue, and then reset /home permission for user galileagb Ticket #20708 
+-followed up and entered PIs' response to the sharepoint about their node decomission. Ticket #19802 
+-worked with Chris, and replied to users in ren-group about mounting /projects/ren-transposon on TSCC Ticket #20765 #20624
+-TSCC 2.0 planning meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+
+weekly 3/4/22
+weekly 3/11/22
+-answered multiple tickets about the home filesystem issue. Ticket #20535, #20534, #20533, #20532, #20530, #20529, #20528, #20409
+-collaborated and answered external server mounting, Matlab GUI, X11-forwarding,/home directory storage problems for the Aguado group Ticket #20407
+-tested /projects/ps-aguado-lab mounting in Matlab GUI on login node and compute node for the Aguado group Ticket #20672
+-guided user ziz073 to setup the right R lib path, then solved the login problem.  Ticket #20443
+-identified why user zez045's Mathematica job failed, and asked Jerry bring the system wide one back Ticket #20426
+-followed up and entered PIs' response to the sharepoint about their node decomission. Ticket #19805 #19807 #19808 #19844 #19803 #19843 
+-installed and tested Autodock GPU, and reported to user cseitz Ticket #20415
+-guided user malbassam in detail how to load module or compile source code of the software he listed Ticket #20652
+-followed up with user rlarsen, and gave a workaround to use yqd command Ticket #20129
+-preparing for and taught TSCC 101 training
+-TSCC 2.0 planning meeting
+-HPC systems monthly meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+weekly 2/25/22
+-followed up orca mpi running on multiple nodes Ticket #20271 
+-followed up an issue about premature termination of jobs without notification from xnuqui helped by Chris Ticket#19800
+-preparing for TSCC 101 training
+-TSCC 2.0 planning meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+weekly 2/11/22
+weekly 2/18/22
+-answered multiple allocation questions in different tickets for ren-group Ticket #20268 #20266 #20224 #20263
+-tested orca mpi running on multiple nodes Ticket #20271
+-invistigated Glide job running out of memory for user cseitz Ticket #20213 #20251 #20150
+-built singularity image and tested if fuse can be used inside it when cluster has centos 7 Ticket #19620
+-explained tscc condo and hotel programs in detail for a potential user Ticket#20037
+-explained the use of cell ranger, and the big memory usage on tscc to user mac157 Ticket#20181 
+-followed up an issue about premature termination of jobs without notification from xnuqui helped by Chris Ticket#19800
+-preparing for TSCC 101 training
+-HPC systems monthly meeting
+-TSCC 2.0 planning meeting
+-TSCC workshop agenda
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+
+weekly 2/4/22
+-followed up with the TSCC decommission
+-followed up user ralozano's login issue with ssh key, helped by Nicole  Ticket #19703 
+-preparing for TSCC 101 training
+-TSCC - discussion about customer billing process
+-TSCC 2.0 planning meeting
+-TSCC workshop agenda
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-opened several accounts with Nicole and Chris
+-several other user issues
+
+weekly 1/21/22
+weekly 1/28/22
+-sent multiple notifications to the PI who owns nodes on the TSCC decommission list
+-installed R package seurat for user kutan Ticket #19754
+-investigated user mdbarnes's data downloading issue on login4, helped by Scott Ticket #19796
+-investigated user ralozano's login issue with ssh key, helped by Nicole  Ticket #19703 
+-TSCC webinar discussion
+-Discuss TSCC decommission
+-opened several accounts with Nicole and Chris
+-group meeting with Chitsazi, Rezvan ( Leila ) about perl error
+-group meeting with Jihad Algassimi about parallel computing in Matlab  Ticket #19541
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-several other user issues
+
+
+
+weekly 1/14/22
+-followed up test for user pkannberg with specifying infiniband nodes Ticket #19419 
+-followed up to run export control for Jogleeson group Ticket #19371
+-investigated user skuthyar's job out-of-time issue #19545 
+-opened several accounts with Nicole and Chris
+-HPC systems monthly meeting
+-Web group meeting for TSCC
+-group meeting with Dr. Kufareva's team
+-group meeting with Dr. Koch's team
+-HPC OPS weekly meeting
+-several other user issues
+
+weekly 1/7/22
+-helped user pkannberg with specifying infiniband nodes Ticket #19419
+-helped user skuthyar with R package data2 installation  Ticket #19409 
+-helped to run export control for Jogleeson group Ticket #19371
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-several other user issues
+
+
+weekly 12/17/21
+-investigated more about user afwilliams job crash with out of space error  Ticket #19114 
+-HPC systems monthly meeting
+-TSCC 2.0 meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-several other user issues
+
+weekly 12/10/21
+-sent out notifications to the users who caused the hight MDS load Ticket #19076 #19077 #19078 #19149 #19151 #19154
+-processed multiple tickets about various issues caused by the high MDS load  Ticket #19155 #19150
+-investigated user afwilliams job crash with out of space error  Ticket #19114 
+-investigated user aaojha's job crash on gibbs node Ticket #19159
+-investigated fastq-dump running on alexandrov nodes Ticket #19104 
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-several other user issues
+
+weekly 11/26/21
+weekly 12/3/21
+-answered multiple tickets about various issues caused by the TSCC downtime Ticket #18997 #19030 #19003 #18964 #18996 #19038 #18986 #19031 #19041 #19047
+-helped user kutan with R package installation inside rstudio singularity server Ticket #18951
+-helped users akhanna2 and ssoni2 with using ssh keys in Windows and MAC OS respectively Ticket #18987 #18994
+-tested a file transfer of a software "Rosetta"'s source code and gave advice to the user Ticket #18974
+-examined user afwilliams's user environment to run samtools, and taught user how to create module keys Ticket #18954
+-double-checked the job status, job script and error messages for user xnuqui, helped by Chris Ticket #18966
+-investigated how Nicole, Eva and Chris created new accounts in alexandrov-visitors group, and gave suggestions Ticket #18937
+-investigated new user saraj's login and file access issues, got help from Nicole and Chris  Ticket #18919  
+-investigated why user a5russell's job couldn't start, helped by Chris Ticket #18886
+-investigated a $PWD mount issue in Singularity 3.7 (but it is good in Singularity 3.5), got help from Chris Ticket #18876
+-opened several accounts with Nicole and Chris
+-prepared TSCC user/job stats for Subha's presentation in TSCC brain storming meeting  
+-TSCC brain storming meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-several other user issues
+
+weekly 11/19/21
+-built and tested ont_guppy in the Singularity container Ticket #18769 
+-answered several questions from bryansun about TSCC accounts, allocations and trainings  Ticket #18885
+-investigated /scratch mounting problem with singularity/3.7, which worked for singularity/3.5 Ticket #18876
+-investigated a claimed memory issue on tscc-11-34   Ticket #18847
+-GPU tests with Tensorflow benchmark file
+-opened several accounts with Nicole and Chris
+-group meeting with Dr. Gilbert's team
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-several other user issues
+
+weekly 11/12/21
+-followed up and tested the performance of the CPMD + QMMM, using new Intel compiler on TSCC  Ticket #17970
+-group meeting with Dr. Aguado's team
+-heled Aguado's group setting up user environment, software, jobs etc. #18687, Ticket #18729 
+-answered several questions from fkucuksayacigil about batch job vs. interactive job and their features, log files etc  Ticket #18724
+-opened several accounts with Nicole and Chris
+-HPC systems monthly meeting
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-several other user issues
+
+weekly 11/5/21
+-followed up and tested the performance of the new CPMD + QMMM on TSCC  Ticket #17970
+-checked up a bgzip lib missing problem   Ticket #18621
+-introduced TSCC account, allocation and  hotel GPU node to a new user Ticket #18609
+-group meeting with Dr. Alexandrov's team
+-opened several accounts with Nicole and Chris
+-TSCC ticket meeting
+-HPC OPS weekly meeting
+-several other user issues
+
+
+weekly 10/29/21
+-fixed and advised two error Ticket #18398 
+-double-checked the status of job 27281163 Ticket #18429
+-followed up and taught user how to use yqd to diagnose the job status, coordinated users to share the resources in the same queue #18073
+-investigated the code crash problem caused by missing links  #18073
+-followed up and changed gold account to let user use dragen with Chris Ticket #18196
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-several other user issues
+
+
+weekly 10/22/21
+-followed up and coordinated the job crash caused by project space management issue together with Gavin, Subha and Chris  Ticket #18114 
+-reported dragen usage group issue, and Chris, the system admin make the dragen node exclusive to the user's group  Ticket #18196
+-introduced TSCC account, allocation and storage systems to a new user Ticket #18209
+-double-checked the status of job 27126577, and taught user how to use yqd to check why the job is in the queue Ticket #18210
+-investigated the seg fault issue in CPMD + QMMM on TSCC  Ticket #17970
+-TSCC accounts and allocation process discussion
+-group meeting with Center for Epigenomics
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-several other user issues
+
+weekly 10/15/21
+-coordinated an investigation about a job crash caused by project space management issue and wifi issue together with Damien, Gavin, Subha and Chris  Ticket #18114 
+-double-checked the status of job 27143531 and told user how to ask for more memory and monitor the job Ticket Ticket #18073
+-double-checked the status of tscc-4-48    Ticket #17992
+-suggested the i/o files storage for a user  Ticket #18138
+-suggested the file corruption caused problem looks like the scp failure Ticket #18030
+-double-checked the status of tscc-gpu-5-9 and job 26932318 Ticket #18064
+-double-checked the status of tscc-gpu-6-2 and tscc-gpu-6-0 Ticket #18067
+-HPC systems monthly meeting
+-TSCC accounts and allocation process discussion
+-opened several accounts with Nicole and Chris
+-HPC OPS weekly meeting
+-several other user issues
+
+weekly 10/8/21
+-had a Zoom meeting with user to teach basic Linux commands and HPC knowledge Ticket #17911
+-suggested the space removal in directory name, then had a Zoom meeting with the user to fix the R pacakge path issue  Ticket #17900
+-followed up with user rcalde2 about the storage allocation of her group and qiime2
+-TSCC accounts and allocation process discussion 
+-HPC OPS weekly meeting
+-several other user issues
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
