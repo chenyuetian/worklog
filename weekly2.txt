@@ -1,3 +1,41 @@
+Weekly 11/17/23
+Weekly 11/24/23
+
+-helped two users zim001 and solvason to start RStudio with reverse proxy server Ticket #31761 #31801
+-helped user atbarnes with a stalled scp,rm etc. in the scratch folder Ticket #31840
+-helped a new faculty asmendiola getting TSCC 2.0 account, conda install and Slurm with Chris Ticket #30043
+-respectively explained to several users zfussy, bbjohnson and bay001: how the automount works for their project storage Ticket #31768 #31803 #31769 
+-helped user bbjohnson modify slurm job script, then fixed the platinum partition setting to correctly start job from the project storage with Chris jobTicket #31835
+-helped user evargashuitzil build and test MARE2DEM with the correct MKL options Ticket #31772
+-helped user spakala with the BrainXcan running issue Ticket #31839
+-respectively helped two users tsanches and ydoctor install and run Galyleo on TSCC 2.0 Ticket #31846
+-explained to user jhc103 why the Galyleo session got dropped from hotel partition Ticket #31859
+-examined user prprabha's VMD code to find out the real reason why the VMD crashed Ticket #31869
+-helped user kecavagn fix the ft2build.h not found error without root Ticket #31906
+-HPC OPS weekly meeting
+-SDSC General Staff meeting
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 10/27/23
+Weekly 11/3/23
+Weekly 11/10/23
+-introduced Galyleo to user rmvogel to run Jupyter notebooks and discussed python software installation without conda Ticket #31387
+-worked with system admins to get most of UCSD users login to TSCC 2.0
+-investigated a slowness in the home file system with Chris Ticket #31680 Ticket #31679
+-explained condo partition and qos features and other TSCC 2.0 settings to user xiy010 Ticket #31681
+-prepared and notified condo users when moving their nodes to TSCC 2.0 Ticket #31698 #30204  #30206 #30208
+-tested and helped user nagrayson to get the right RAM and CPU cores to finished the job Ticket #31527 #31420
+-guided user smirarab how to transfer data between TSCC and Expanse (rather than mount the Expanse storage) Ticket #31291
+-prepared and taught TSCC 2.0 workshop for all TSCC users
+-HPC OPS weekly meeting
+-SDSC General Staff meeting
+-opened several accounts together with Nicole and Chris
+-TSCC ticket meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
 Weekly 10/13/23
 Weekly 10/20/23
 -updated TSCC node list with Chris
@@ -8,6 +46,7 @@ Weekly 10/20/23
 -examined and modified user cscarpenter's job script to fix the stdout and stderr files copying issue and the command not found issue Ticket #31109
 -guided user ekunselm installing trinity bowtie2 with conda, as well as correctly activating conda environment in the batch job #31105
 -installed and tested swash for user atbarnes Ticket #31001
+-installed RSEM and EBseq for user kutan Ticket #31092
 -tested a visualization component (anvi'o) on the reverse proxy server together with Marty Ticket #30926
 -HPC OPS weekly meeting
 -HPC systems monthly meeting
