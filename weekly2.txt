@@ -1,3 +1,37 @@
+Weekly 12/15/23
+Weekly 12/22/23
+-advised user ydoctor why and how to submit interactive job on gpu node for test purposes, and pointed out the OOM is because of RAM rather than GPU memory Ticket #32460
+-discussed how to use multiple NVLinked GPUS in NAMD3 simulation with users casalino and xnuqui Ticket #32390
+-tested and then reached out to Rose group and Hao group about their new nodes in production, as well as informed business office  Ticket #32364 32461
+-diagnosed a user's code issue when connecting to external server because of the connection limit on the server Ticket #32311
+-diagnosed two kinds of user yuc211's job issues: 1. when copying stdout to /restrict storage and 2. when getting 0 cpu time running on a certain node Ticket with Chris #32321
+-diagnosed a PBS syntax problem in user mdbarnes's PBS script, and modified the script in order to submit multiple independent jobs  Ticket #32379
+-HPC OPS weekly meeting
+-kept scheduling condo nodes transition to TSCC 2.0  
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 12/1/23
+Weekly 12/8/23
+-installed NAMD3-b5 in Singularity and tested it for user casalino and discussed how to specify options for multiple GPU usage in NAMD with the user Ticket #32149
+-helped a non-UCSD user to set up the TSCC 2.0 login with UCSD AD password Ticket #31863
+-troubleshot and guided several users using Galyleo Ticket #31920 #31945 #32207 #32222
+-investigated a slow performance for user ekofman's program #32218
+-installed older versions of tidyverse and devtools for user allona Ticket #32228
+-diagnosed user osongste's yaml file and conda install error message, found the reason why the conda install failed Ticket #32054
+-tested new module file on TSCC 2.0 and helped user bay001 with automatically unloading dependencies of module Ticket #32022
+-found why user jix062's snakemake jobs  requesting normal resource queued for days Ticket #32126
+-helped user rpatkar to start Slurm interactive job and fix the broken pipeline issue caused by network disconnection Ticket #32129
+-was helping user ohowarth with a Strelka2 issue  Ticket #32160
+-explained to user mantkowiak in detail how to transfer files between TSCC 1.0 and 2.0 Ticket #32188
+-bagan to help with condo nodes transition to TSCC 2.0  
+-HPC OPS weekly meeting
+-TSCC ticket meeting
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-several other user issues
+
 Weekly 11/17/23
 Weekly 11/24/23
 
@@ -292,7 +326,7 @@ Weekly 3/3/2023
 -installed several R packages for user jhdominguez Ticket #26946
 -worked with security group about a compromised tscc account Ticket #26841
 -setup and talked to a new hotel group Ticket #26804 #26484 #26978
--helped ren-group to buy more SUs and place order of two new nodes wish Subha and Julius Ticket #26939
+-helped ren-group to buy more SUs and place order of two new nodes with Subha and Julius Ticket #26939
 -notified users whw006 not taking all of the GPU cards, and suggested how to improve job script for gpu-hotel jobs -Ticket #27088
 -attending AI Bootcamp remotely every Tuesday and Thursday
 -opened several accounts with Nicole and Chris
