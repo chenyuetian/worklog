@@ -1,3 +1,187 @@
+
+Weekly 4/5/23
+Weekly 4/12/23
+-tested and optimized the options and executables of Amber 22 in TSCC 2.0 SLURM job Ticket #34946
+-loaded proper modules, modified the makefile of cytosim and compiled it Ticket #34951 
+-installed and tested helixer then emapper.py for user nagrayson Ticket #34937
+-troubleshot the reason of user prvaldes SICER2 program crash, and advised changing the temp location Ticket #34926
+-introduced multithreading in the Slurm job allocation and SRUN_CPUS_PER_TASK and SLURM_CPUS_PER_TASK in srun to user sasaeed Ticket #34823
+-suggested user jhc103 how to fix "CUDA out of memory" and "No space left on device" error Ticket #34692
+-troubleshot user snandi's failed jobs (because of project storage not properly mounted on the compute node where the job was on), as well as failed Singularity container building (because of the limited space at /tmp)Ticket #34921 #34815
+-troubleshot a Galyleo error on the reverse proxy server that was caused by jupyter notebook/lab that was still trying to connect to a job that had disappeared and filled up the logs at /dev/sda1 on the server with Scott Ticket #34998 #34994 #34993 #34992 #34991 #34989 34985 #34982
+-troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket #35006 #34979 #34969 #34950 #34938 #34924 #34920 #34904 #34887 #34885 #34855 #34838 #34836 #34829 #34825 #34822 #34807
+-installed R packages tidyverse for user allona Ticket #34832
+-HPC systems monthly meeting
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
+
+Weekly 3/29/23
+-tested gromacs 2023 on TSCC2.0 in SLURM jobs for user ckmorris, as the performance was slow. With proper configurating the performance of the same simulation system is comparable to TSCC 1.0 on the same hardware Ticket #34631
+-installed a few Perl packages for user skuthyar's prokka installation   Ticket #34700
+-examined the job scheduling and explained to user aopatel why the job could not get resources allocated  Ticket #34709
+-installed ngsrelate for user jfifer Ticket #34750
+-installed emacs 29.3 as well as gnutls from source for user szu Ticket #34797
+-installed R packages purrr and Biostrings for user smardell Ticket #34806
+-helped user szu to start x11 forwarding in the job, and the new script to check the SU balance.  Ticket #34790
+-tested and modified the script of deepsomatic for user snandi Ticket #34689
+-modified and tested ww3_shel with MPI in Slurm for user aho Ticket #34608
+-troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket  #34807 #34800 #34792 #34789 #34787 #34782 #34775 #34765 #34757 #34755 #34751 #34744 #34739 #34720 #34717 #34698 #34685 #34674 #34672 #34671 #34663 #34659 #34655 #34653 #34652 #34629
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
+
+Weekly 3/22/23
+-worked with team to diagnose login nodes crash these days. Users had a R process generated from miniconda/anaconda sh script, taking 2000% CPU load, and possibly crashed the login nodes.  Ticket #34487 #34456 #34416 #34413 #33927
+-wrote and tested job script to include the "timeout" command to stop the program right before hitting the walltime limit, then ask the scontrol to requeue the job Ticket #34458
+-found out the reason why some jobs in user bsleger's job array couldn't be canceled, and modified by squeue format by adding the QOS to the output Ticket #34595
+-diagnosed why user jhc103's pytorch cannot find GPU on the GPU node, and verified the availability of GPUs with a new pytorch installation Ticket #34582
+-installed R package tidyverse for user jfifer Ticket #34566
+-installed and tested VEP 111 and its perl dependencies for user snandi  Ticket #34589 #34282
+-diagnosed why Galyleo and snakemake failed for user rohowarth and another user Ticket #34592 #34609
+-troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket #34602 #34585 #34584 #34582 #34575 #34574 #34571 #34569 #34565 #34564 #34557  #34554 #34543 #34540 #34531 #34523 #34520 #34513 #34489 #34486 #34484  #34483 #34480 #34466 #34459 #34450 #34439 #34438
+-zipped and moved two users juh079 and tg's TSCC 1.0 home directories for saving at 2.0 #34465 #34419 
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
+
+
+Weekly 3/15/23
+-worked with system admins to fix a issue "QOSGrpNodeLimit" and "QOSGrpCpuLimit" caused by improper QOS entries that caused only a few jobs could start for all condo gpu groups Ticket #34486 #34302 #34212 
+-troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket #34429 #34426 #34420 #34408 #34407 #34406 #34405 #34404 #34403 #34397 #34382 #34381 #34377 #34352 #34337 #34332 #34323 #34315 #34314 #34313 #34309 #34303 #34301 #34299 #34296 #34239 #34230 #34103 #33967 #33930 
+-helped user hsethuram to zip and move the TSCC 1.0 home and scratch directory to 2.0 Ticket #34315
+-coordinated several nodes decommission with system admins, OPS, finance office and PIs Ticket #33171
+-helped a few users to regain access to their TSCC 1.0 home directory Ticket #34431 #34428
+-tested a singularity issue about "kernel reported a bad superblock for squashfs image partition" for user bay001 Ticket #34344
+-verified that users cannot run cron jobs on TSCC, and gave user bay001 workarounds to periodically check a folder's contentsTicket #34367
+-prepared a user list for alexandrov group Ticket #34362
+-modified and tested user rbking's job script for running  MARE2DEM code with intel mpi Ticket #34199
+-examined user ssunder's job script and array assignment, and found the invalid job array specification issue was caused by the jobs hit the array limit (default 1001) Ticket #34320
+-examined the job script and error log, found out why the code "$(free -h| grep Mem | awk '{split($7,a,"G");print a[1]-5"G"}’)" ended up with "-Xmx-4G" on certain nodes and caused error, helped with ChatGPT Ticket #34319
+-tested and then reached out to Rose group and Hao group about their new nodes in production, as well as informed business office 
+-developing script to check the allocation balance
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
+
+Weekly 3/8/23
+-written a bash script that can show the free capacity of a partition when specifying the number of cores needed. When entering the partition and the number of cores needed, it will give all available machines as well as their free cores at the time. 
+-worked with system admins to fix a issue "QOSGrpNodeLimit" and "QOSGrpCpuLimit" caused by improper QOS entries that caused only a few jobs could start for all condo gpu groups Ticket #34221 #34212
+-troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket #34273 #34264 #34259 #34258 #34205 #34204 #34190 #34189 #34180 #34170 #34165 #34154 #34132 #34127 #34126 #34121 #34105 #34104 #34103 #34092 #34083 #34076 #33850 #33757 #33636 #33354
+-discussed APM availability with user rohowarth and suggested SLURM seff for now Ticket #34149
+-troubleshot user rbking's slurm script and set up the user environment for running  MARE2DEM code Ticket #34199
+-installed R packages dada2, phyloseq, BiMiCo, MiscMetabar, tidyverse and phangorn for user jhdominguez Ticket #34136
+-tried to install R 4.3 with readline supported for user ekunselm but couldn't finish as the user found another solution Ticket #34197
+-identified and troubleshot a memory allocation issue that caused many apps failed Ticket  #34302 #34280 #34267 #34231 #34229 #34221 #34210 #34208 #34207 #34186 #34184 #34131 #34120 #34116 #34115 #34114 #34098 #34097 #33930
+-troubleshot user ydoctor's pip installation issue "ailed to map segment from shared object" Ticket #34114
+-installed and tested CPMD on TSCC 2.0 for user fnum Ticket #33966 
+
+Weekly 3/1/23
+
+-investigated an incorrect filling up /tmp on the compute node and suggested user to use /scratch/$USER/job_$SLURM_JOBID as the temp directory  Ticket #34015 #34007
+-troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket   #34071 #34065  #34060 #34047 #34036 #34030 #34026 #34009 #33971 #33958 #33937 #33995 #33986 #33984 #33981 #33967 #33961  #33958 #33930 #33921 #33919 #33918  #33912 #34092 
+-suggested in detail how to build REDItools Singularity container from scratch or Docker Hub, and the availability of Nvidia NGC repo Ticket #33998
+-troubleshot a HHsearch failure issue at alphafold runtime, and then rebuilt and tested a new singularity container from the docker image with a modified docker file for alphafold that can run on the AMD nodes. Ticket #33968 
+-investigated an issue using jupyter themes on tscc2.0, and advised user rlancione how to proceed with the troubleshooting Ticket #33973
+-resolved an R package igraph installation issue for user a9silva Ticket #34044
+-investigated an error while uncompressing data in TSCC2.0 after scp for user osoyalan Ticket #33967
+-had a Zoom meeting with an industrial group about their storage and computational resources on TSCC 2.0 Ticket #33952 #33540
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-many other user issues
+
+
+Weekly 2/23/23
+-installed htslib for user hziaeija, installed a new bzip2 module, and tested why module spider couldn't find it (but module load can), possibly because of the system spider cache in lmod Ticket #33475
+-troubleshot a proxy error message when lauching galyleo because of a modified jupyter server Ticket #33636
+-troubleshot and fixed an issue of gres/gpu:rtx_3090 count invalid in Slurm in the rtx3090 partition with Chris  Ticket #33846 
+-answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket #33862 #33861 #33857 #33856 #33841 #33836 #33826 #33825  #33824 #33812 #33787 #33781 #33780 #33759 #33740 #33738 #33737 33736 #33728 #33724  #33156
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-many other user issues
+
+Weekly 2/16/23
+-transferred alphafold 2.3.2 databases to TSCC 2.0, and tested it with RTX3090 and A6000 GPU nodes Ticket #33543
+-troubleshot why the jupyter file saving got permission denied error in the Jupyter session for user sjschroeder and  ijhamb Ticket #33705 #33717
+-diagnosed why user jhc103's slurm configuration is not available, and how the "-n" and "-c" options should be chosen based on the R script  Ticket #33672
+-troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket #33727 #33668 #33663 #33662 #33654 #33650 #33636 #33635 #33632 #33627 #33636 #33632 #33622 #33604 #33563 #33556 #33545 #33542 #33510 #33509 #33505 #33504 #33363
+-troubleshot a galyleo installation and running issue for user kecavagn Ticket #33528
+-tested and then reached out to Mali group about their new RTX A6000 node in production, as well as informed business office  Ticket #33623  
+-installed tidyverse and phyloseq for user mdemmel Ticket #33577
+-HPC OPS weekly meeting
+-HPC systems monthly meeting
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-many other user issues
+
+
+Weekly 2/9/23
+
+-helped multiple non-UCSD users to set up the TSCC 2.0 login with UCSD AD password Ticket  Ticket #33404
+-found a workaround to compile Mare2dem and tested on TSCC 2.0 Ticket #32974
+-examined user zfussy's job scripts and output and identified the reason for the issue of /tmp filling up because of the change of TMPDIR on TSCC 2.0 Ticket #33383
+-troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket #33509 #33504 #33475 #33472 #33455 #33454 #33447 #33432 #33442 #33420 #33387 #33382  #33376 #33370  #33359 #33357 #33346 #33347 #33341 #33340 #33339 #33333  #33328 #33324 #33322 #33321 #33313 #33311 #33307 #33305 #33302  #33293  #33291 #33289 #33276 #33263 #33246 #33211 #33175 #33156 #32873
+-rebuilt AMBER22 GPU version with Jerry Ticket #33292
+-helped user z8jiang transfer files on the data mover node and use terminal multiplexer Ticket #33384
+-discussed the use of AMBER22 on GPUs with user ux453813 and modified the example code  Ticket #33296
+-provided the job script for user q2liang and troubleshot an AMBER 22 simulation issue Ticket #33011
+-HPC OPS weekly meeting
+-kept scheduling condo nodes transition to TSCC 2.0  
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-many other user issues
+
+Weekly 2/2/23
+-reinstalled R packages latticeExtra and dada2 for user skuthyar Ticket #33173
+-answered multiple questions about TSCC 2.0 from user jsolvason and discussed their usage plan via Zoom Ticket #32992
+-helped a user asmendiola to use the latest R from RStudio in the singularity container, and give advice about how to modify the job script Ticket #33239
+-identified the cause of illegal instruction when user mamoabosompem ran samtools that was compiled with Intel architecture, and gave a workaround of excluding the AMD nodes in the job submission Ticket #33211
+-preparing TSCC 2.0 workshop for all TSCC users
+-HPC OPS weekly meeting
+-kept scheduling condo nodes transition to TSCC 2.0  
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 1/19/23
+Weekly 1/26/23
+
+-tested a trouble running singularity container on TSCC 2.0 for user bay001 Ticket #32777
+-answered and followed up more questions about installing and using galyleo to launch Jupyter Notebook(Lab) Ticket #33035 #32946 #32967 #33003
+-helped user seanso to find out the reason for the random error when running code Ticket #32892
+-helped user skuthyar to find out the reason for the exit code when running dada2 137 Ticket #32908
+-answered questions from user bay001 about the job priority in SLURM and how to check the qos group limit  Ticket #32931
+-installed dada2 for users skuthyar and ufarah and Ticket #32836 #32803
+-wrote a script to check the mouting status on certain nodes and checked user ydoctor's project storage mounting on the hotel nodes Ticket #32799
+-preparing TSCC 2.0 workshop for all TSCC users
+-HPC OPS weekly meeting
+-kept scheduling condo nodes transition to TSCC 2.0  
+-opened several accounts together with Nicole and Chris
+-TSCC 2.0 planning meeting
+-several other user issues
+
+Weekly 1/5/23
+Weekly 1/12/23
+-investigated two multithreading issues about Ciriquant and  lsgkm at runtime for user hsher Ticket #32496
+-optimized squeue command output results and format by adding certain -O options for myself and user bay001 Ticket #32711
+-answerd tscc 2.0 transition questions in detail regarding Slurm partition,qos,allocation and job&node monitoring from user rlancione  Ticket #32737
+-investigated a fatal error with device peer access in user xnuqui's NAMD simulation and confirmed it is the NVLink issue and it is node specific Ticket #32670
+-investigated a "no space left on device" error for user bay001, and found PuLP's solver in the snakemake pipeline filled up /tmp on node incorrectly Ticket #32661
+-fixed a $TMP space issue for user bay001 Ticket #32750
+-worked on a DNS resolution failure issue for user rohowarth with Chris Ticket #32725
+-helped user afwilliams to install veloctyo and samtools in the conda environment velocyto Ticket #32610
+-investigated a false-alarmed overuse of resources about hopper nodes Ticket #32589
+-preparing TSCC 2.0 workshop for all TSCC users
+-HPC OPS weekly meeting
+-kept scheduling condo nodes transition to TSCC 2.0  
+-opened several accounts together with Nicole and Chris
+-HPC systems monthly meeting
+-TSCC 2.0 planning meeting
+-several other user issues
+
 Weekly 12/15/23
 Weekly 12/22/23
 -advised user ydoctor why and how to submit interactive job on gpu node for test purposes, and pointed out the OOM is because of RAM rather than GPU memory Ticket #32460
