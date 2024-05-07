@@ -66,7 +66,7 @@ Weekly 3/15/23
 -many other user issues
 
 Weekly 3/8/23
--written a bash script that can show the free capacity of a partition when specifying the number of cores needed. When entering the partition and the number of cores needed, it will give all available machines as well as their free cores at the time. 
+-wrote a bash script that can show the free capacity of a partition when specifying the number of cores needed. When entering the partition and the number of cores needed, it will give all available machines as well as their free cores at the time. 
 -worked with system admins to fix a issue "QOSGrpNodeLimit" and "QOSGrpCpuLimit" caused by improper QOS entries that caused only a few jobs could start for all condo gpu groups Ticket #34221 #34212
 -troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket #34273 #34264 #34259 #34258 #34205 #34204 #34190 #34189 #34180 #34170 #34165 #34154 #34132 #34127 #34126 #34121 #34105 #34104 #34103 #34092 #34083 #34076 #33850 #33757 #33636 #33354
 -discussed APM availability with user rohowarth and suggested SLURM seff for now Ticket #34149
@@ -80,7 +80,7 @@ Weekly 3/8/23
 Weekly 3/1/23
 
 -investigated an incorrect filling up /tmp on the compute node and suggested user to use /scratch/$USER/job_$SLURM_JOBID as the temp directory  Ticket #34015 #34007
--troubleshot and answered multiplt questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket   #34071 #34065  #34060 #34047 #34036 #34030 #34026 #34009 #33971 #33958 #33937 #33995 #33986 #33984 #33981 #33967 #33961  #33958 #33930 #33921 #33919 #33918  #33912 #34092 
+-troubleshot and answered multiple questions about login, cluster maintenance, file transfer, job submission, account and allocation update, mailing list notification on TSCC 2 Ticket   #34071 #34065  #34060 #34047 #34036 #34030 #34026 #34009 #33971 #33958 #33937 #33995 #33986 #33984 #33981 #33967 #33961  #33958 #33930 #33921 #33919 #33918  #33912 #34092 
 -suggested in detail how to build REDItools Singularity container from scratch or Docker Hub, and the availability of Nvidia NGC repo Ticket #33998
 -troubleshot a HHsearch failure issue at alphafold runtime, and then rebuilt and tested a new singularity container from the docker image with a modified docker file for alphafold that can run on the AMD nodes. Ticket #33968 
 -investigated an issue using jupyter themes on tscc2.0, and advised user rlancione how to proceed with the troubleshooting Ticket #33973
@@ -281,11 +281,11 @@ Weekly 10/6/23
 -guided a new group about the file permission and sharing in their /home directories Ticket #30091
 -investigated a slow file transfer issue Ticket #30104
 -guided a new PI about running Matlab and Gaussian in parallel, and discussed the possible purchase of GaussView Ticket #30314
--tested several fild transfer tools such as scp, sftp, rsync and bbcp as alternative of bbftp Ticket #30550
+-tested several file transfer tools such as scp, sftp, rsync and bbcp as alternative of bbftp Ticket #30550
 -investigated an early job termination, abnormal disconnection and improper compute node ssh issues Ticket #30655
 -tested slurm job array under TSCC 2.0 and answered several other questions for user hjiao Ticket #30697
 -helped user jbendik with staring Jupyter Notebook with Galyleo and running PBS job array Ticket #30870
--installed gromaces 2023.2 for user mgshehata Ticket #30751
+-installed gromacs 2023.2 for user mgshehata Ticket #30751
 -tested why a conda env couldn't start when the batch job was running Ticket #30930
 -reinstalled numactl for user nagrayson Ticket #30931
 -investigated launching Galyleo with yml file, and ended up with creating the conda environment with yml, then running Galyleo Ticket #30699
