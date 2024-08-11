@@ -1,3 +1,75 @@
+Weekly 7/26/24
+Weekly 8/2/24
+Weekly 8/9/24
+-added a modulepathadd option to galyleo so galyleo user can add their module paths to MODULEPATH, now waiting for Marty's review to add to galyleo github repo Ticket #37650
+-fixed two python packages tmscoring and transformers for user ssunder, and guided the user starting singularity to use alphafold2 Ticket #36559
+-fixed the slurm script for running namd with GPUs for user prprabha Ticket #36876
+-followed up and troubleshot why user prvaldes's SICER2 running crashed by 1. incorrect temp file names or 2. insufficient local storage space Ticket #37194
+-helped user jhc103 to modify a HERE document for passing in multi-line argument for SLURM Ticket #37285
+-troubleshot a job ended MaxSignal [53] Ticket #37304
+-reserved the bad node tscc-11-0 and reported three known issues on it to the system admins  Ticket #37331 #37325 #37479
+-offered slurm option to user cgucci to exclude nodes that don't have enough local scratch space for the temp files Ticket #37406
+-shared exp with user rmvogel about compiling R from souce on TSCC Ticket #37427
+-learned running snakemake with slurm, and shared it with user xiangz Ticket #37453
+-fixed a permission error when when running Bulker in a shared virtual environment, and installed a few R packages for user a9silva Ticket #37483
+-tested whether the job array maximum is subject to the maximum number of jobs per group defined by MaxSubmitPA. Ticket #37541
+-installed and tested JAVA 17 and gatk 4.6.0.0 Ticket #37543
+-found an issue about SFTP protocol Ticket #37562
+-found the reason for error "srun: fatal: SLURM_MEM_PER_CPU, SLURM_MEM_PER_GPU, and SLURM_MEM_PER_NODE are mutually exclusive" and suggested user q2liang submitting batch job from the login node Ticket #37568
+-toubleshot a stochastic LLVM error caused by "import seqdata as sd" in python for user hsher, and suggested checking if seqdata, numba and llvmlite are compatitble with each other and the temp files of pip can be accessed from all nodes Ticket #37622 
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
+
+Weekly 7/5/24
+Weekly 7/12/24
+Weekly 7/19/24
+-troubleshot file system and ssh issue on tscc-11-0, and gave workaround to users  Ticket #37294 37302 37304 37305
+-modified the syntax of HERE document for passing in multi-line argument for SLURM for user jhc103 with ChatGPT Ticket #37285
+-investigated why condo jobs cannot ask for more than 36 cores, and found all platinum nodes were not in the condo partition hinted by user ydoctor Ticket #37269 #37192
+-reachded out to user schoudhury about the jobs running out of SUs, and provided the user solutions about running tests to optimize the resource usageTicket #37263
+-fixed an error from using conflict pip for user lvilarribo Ticket #37257
+-condo jobs not preemptable, and inproper priority for the platinum/gold jobs Ticket #37199 #37188 #37181 #37180 #37176 #37174 #37167 #37166
+-investigated the no space left issue for user prvaldes Ticket #37194
+-investigated user mgshehata's gromacs job failure, and identified the problem was from the input (rather than the hardware, job scheduler, software, etc. ) Ticket #37159
+-worked with team to monitor and test hotel and condo nodes that don't have lustre or project storage mounted these days. Ticket #37110 #36967 #36942 #36936
+-investigated user ssunder's pip package import error, conda environment error as well as galyleo launching issue Ticket #36559
+-continued to test 16 v100 nodes in hotel with STREAM and Amber GPU
+-HPC systems monthly meeting
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
+
+Weekly 6/21/24
+Weekly 6/28/24
+-worked with team to monitor and test hotel nodes that don't have lustre mounted these days. 
+-investigated a strange output when using tar command from rlancione and found the bad alias which was created by mistake Ticket #36680
+-installed and tested RGI in conda and ended up with the Singularity container for user skuthyar Ticket #36671 
+-investigated an error in removing directory that user k1dang created  Ticket #36806
+-resolved an issue "/usr/bin/tput: undefined symbol: _nc_tiparm" when user szu running amm Ticket #36770
+-investigated the reason and explained to user kagnapathy why the jobs ended with "Illegal instruction" when running Julia, and suggested excluding AMD nodes  Ticket #36762 
+-installed tidyverse and brms for user cbpascual Ticket #36757
+-investigated a pip install issue in jupyter notebook from user ssunder, and suggested not mixing python packages inside and outside the container  Ticket #36559 
+-had two user meetings about their data security, storage and computational resources on TSCC 2.0 Ticket  Ticket #36492 #36606
+-followed up a memory issue when running Java-backend bioinformatic tools in Nextflow Ticket #36010
+-tested 16 v100 nodes in hotel with STREAM and Amber GPU, and found a few issues
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
+ 
+Weekly 6/7/24
+Weekly 6/14/24
+-investigated multiple job running issues caused by bad lustre mount on the hotel nodes
+-investigated unexpected jobs restarting (jobs restarted themselves rather than moving on to the pending jobs) Ticket #36467
+-troubleshooting slowness of Metect2 Ticket #35507
+-optimizing Alphafold running to fit very long aa protein  Ticket #35508
+-troubleshooting out of memory error when running picard in Nextflow  Ticket #36010
+-installed 'devtools', 'lava' and 'GenomicSEM' for user rcupertino Ticket #36440
+-HPC systems monthly meeting
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
+
 Weekly 5/24/24
 Weekly 5/31/24
 -back from paternity leave on 5/23/24
@@ -11,6 +83,9 @@ Weekly 5/31/24
 -investigated TMPDIR issues for various users  Ticket #35995 #36010 #35791  #35803
 -investigated a R kernel issue in Jupyter notebook launched by Galyleo Ticket #35984
 -installed R packages MASS and vcfR for user c1hsiao Ticket #35925
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Chris
+-many other user issues
 
 Weekly 4/5/24
 Weekly 4/12/24
