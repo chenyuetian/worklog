@@ -1,3 +1,47 @@
+Weekly 1/3/25
+Weekly 1/10/25
+-back from the holiday season
+-worked with system admins to adjust the home directory quota, helped user clean up the home disk space and solved multiple user issues caused by being over quota.  Ticket #40472 #40467 #40438
+-investigated a home directory freezing issue from five users in the same lab, and adjusted their conda loading to fix it as a workaround Ticket #40468 #40428 #40394 #40392 #40367
+-identified an illegal instruction issue in user ziw131's VASP calculations  Ticket #40450
+-investigated a galyleo hung issue caused by node/job in the CG status Ticket #40384
+-gave guidance for optimizing Data Transfer from TSCC Server  Ticket #40375
+-debugged, modified and tested HiDEF-seq pipeline to make it run on TSCC Ticket #40335
+-began to learn about the new cluster COSMOS
+-HPC OPS weekly meeting
+-Cosmos Sync weekly meeting
+-many other user issues
+
+Weekly 12/6/24
+Weekly 12/13/24
+Weekly 12/20/24
+-found out why nmkoch's jobs are stopped. The home disk quota was not properly set for users Ticket #40025
+-identified user wjin's srun not found issue and solved it Ticket #40007
+-identified user salazzam's command not found issue and solved it  Ticket #39979
+-checked user lrodr258's job script and fixed a syntax issue to properly run Amber Ticket #39947
+-reached out to all users who have used more than 100GB of disk space in their directory
+-HPC OPS weekly meeting
+-many other user issues
+
+
+Weekly 11/8/24
+Weekly 11/15/24
+Weekly 11/22/24
+-installed and tested alphafold3 on TSCC
+-installed a new Uniprot30 database in alphafold2 to fix a runtime error during multiple sequence alignment by HHblits Ticket #39601
+-found an expired certificate on the reverse proxy server that prevents users from using Galyleo and asked Scott to fix it
+-identified the full disk space usage in the home file system, and worked with system admins to address it. 
+-tried to find out the reason why user's abhowell Scenic+ was crashed Ticket #39796
+-installed more complicated R packages for user abhowell Ticket #39480
+-tested how to start pytorch on multiple GPUs on TSCC 2.0 Ticket #39327
+-helped user abhowell run multiple scripts on the platinum node and explained the stdout attachment option when jobs restart to the user Ticket #39758
+-helped user etorreblancazanca install and modify pySCENIC, and suggested how to build it inside Singularity Ticket #39720
+-presented in a workshop at SC24
+-HPC OPS weekly meeting
+-many other user issues
+
+
+
 Weekly 10/25/24
 Weekly 11/1/24
 -modified Config.sh and Makefile to compile  Gizmo for user yiz020 Ticket #39370
