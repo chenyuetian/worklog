@@ -1,8 +1,43 @@
+Weekly 1/31/25
+Weekly 2/7/25
+-installed and tested new Singularity image and databases of AF 3.0.1  Ticket #40903
+-investigated user jhc103's parallel_fastq_dump.sh and its logs and found out why it gave the Disk quota exceeded error  Ticket #41009
+-investigated user tbaddour's job script and error messages in logs, and gave advice about how to test to find out the real reason for the job crash  Ticket #40992
+-installed R package devtools for user lvilarribo Ticket #40977
+-investigated why user snandi had trouble login TSCC from VSCode, found the possible OOM caused by the Copilot extension under the logs ~/.vscode-server/data/logs Ticket #40920
+-checked why user aopatel's process was killed (because of OOM), and showed how to properly start an interactive job with specified memory Ticket #40896
+-checked why some of user abhowell's processes were killed (because of OOM) but others were not, and explained that even if the exact same command was running, the input was different so the memory required for each process varies. Ticket #40809
+-installed bcftools plugin affy2vcf for user abhowell, and fixed libcrypto.so.1.1 not found error on TSCC caused by running the older version of the bcftools Ticket #40808
+-confirmed with Scott about the AWS S3 bucket download rule update, and got to know there was no proxy URL required Ticket #40780
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Todd
+-Cosmos Sync weekly meeting
+-many other user issues
+
+Weekly 1/17/25
+Weekly 1/24/25
+-installed and tested pycistopic and scenicplus with extra plugins required by running large dataset  Ticket #40696 
+-identified a job that was killed by the OOM killer  Ticket #40705
+-investigated and tested GPU memory preallocation and allocation in JAX, and advised how to avoid oom Ticket #36559
+-helped user nmkoch with a bash script to change multiple txt files to bash executables at once Ticket #40691
+-tested why the user avpong's galyleo notebook saved in their restricted space is not accessible in the Galyleo session Ticket #40680
+-fixed an issue with running SKIRT on TSCC Ticket #40552
+-helped a new user prepare and run Gromacs on TSCC Ticket #40505
+-investigated jomatheson's installation and running a C++ program to the scratch space, and guided user on how to set PATH and use relative/absolute paths Ticket #40669
+-investigated an error message: scp: Received message too long 168448884, and identified the problem caused by "echo" or "printf" in user's .bashrc, advised to use rsync or add "-o 'LogLevel=QUIET'" to scp Ticket #40569
+-helped users clean up the home disk space and solved multiple user issues caused by being over quota.  Ticket #40709 #40693
+-discussed with the team about the next generation of CPU nodes for TSCC 
+-HPC systems monthly meeting
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Todd
+-Cosmos Sync weekly meeting
+-many other user issues
+
 Weekly 1/3/25
 Weekly 1/10/25
 -back from the holiday season
--worked with system admins to adjust the home directory quota, helped user clean up the home disk space and solved multiple user issues caused by being over quota.  Ticket #40472 #40467 #40438
--investigated a home directory freezing issue from five users in the same lab, and adjusted their conda loading to fix it as a workaround Ticket #40468 #40428 #40394 #40392 #40367
+-worked with system admins to adjust the home directory quota, helped users clean up the home disk space and solved multiple user issues caused by being over quota.  Ticket #40472 #40467 #40438
+-investigated a home directory freezing issue from five users in the same lab, and adjusted their conda loading to fix it as a workaround Ticket #40468 #40428 #40394 #40392 #40367 Ticket #40571
 -identified an illegal instruction issue in user ziw131's VASP calculations  Ticket #40450
 -investigated a galyleo hung issue caused by node/job in the CG status Ticket #40384
 -gave guidance for optimizing Data Transfer from TSCC Server  Ticket #40375
@@ -15,7 +50,7 @@ Weekly 1/10/25
 Weekly 12/6/24
 Weekly 12/13/24
 Weekly 12/20/24
--found out why nmkoch's jobs are stopped. The home disk quota was not properly set for users Ticket #40025
+-found out why user nmkoch's jobs are stopped. The home disk quota was not properly set for users Ticket #40025
 -identified user wjin's srun not found issue and solved it Ticket #40007
 -identified user salazzam's command not found issue and solved it  Ticket #39979
 -checked user lrodr258's job script and fixed a syntax issue to properly run Amber Ticket #39947
