@@ -1,3 +1,84 @@
+Weekly 4/4/25
+Weekly 4/11/25
+-investigated user aopatel's code issue. The code couldn't load CUDA or found GPUs. Identified a GPU node problem and reported to the system side Ticket #42380 
+-investigated an issue from user ydoctor. The Cursor/VSCode remote host extension keeps crashing. Checked multiple Cursor logs and suggested user to adjust extensions and delete stale lock file. Ticket #42352
+-investigated an issue from user abhowell. Found out the reason for the "No module named 'pandas'" error when loading pandas in the conda environment. Ticket #42319
+-investigated and found out the reason why user tiw046's job got interrupted and output File contained unexpected characters  Ticket #42298
+-explained in details about the group QOS and partition and the limitations of the QOS to user jhc103 Ticket #42290
+-discussed best way to back up data to the local server with rsync with user achandrasekaran Ticket #42235
+-discussed best way to run 700 samples (~45 min - 1 h each) with user l1joseph, and reminded not to mix allocations for different labs Ticket #42135
+-tested installing and running nr and nt databases for Blast+ under system path /cm/shared and own scratch path Ticket #42102
+-HPC systems monthly meeting
+-built and tested elbencho on COSMOS, conducted intensive runs for getting the IOPS, write and read bandwidth
+-adapted Unifrac script from Igor and made it for reliability testing on COSMOS
+-opened several accounts together with Nicole and Todd
+-attent COSMOS training provided by AMD
+-HPC OPS weekly meeting
+-Cosmos Sync weekly meeting
+-many other user issues
+
+Weekly 3/21/25
+Weekly 3/28/25
+-built and tested elbencho for filesystem benchmark on TSCC and COSMOS
+-built and tested unifrac as a benchmark for reliability test on COSMOS, with Igor and Subha
+-investigated an error using LAMMPS with PLUMED, figured out why user achandrasekaran's PLUMED couldn't install with MPI, modified the scripts for properly installing PLUMED and LAMMPS, and last verified with the tests. Ticket #42050
+-guided user achandrasekaran on how to load modules for using system-wide gsl, as well as how to link the gsl in user's own space Ticket #41951
+-investigated more job failing and requeuing due to the node failure Ticket #41979
+-worked with system admins to fix a stale mount issue of my home directory under /home/ychen64 or /tscc/nfs/home/ychen64 on all tscc nodes. 
+-investigated a Cursor (VScode) disruptive SSH connection, tested Cursor connection, gathered all information needed, and gave suggestions to the user  Ticket #41925
+-investigated an Input/Output error when user jbendik used scp to transfer files between TSCC and the lab's server Ticket #41865
+-guided user jhc103 on how to monitor the scratch space at job runtime, how to monitor I/O with additional tools, and how to redirect the output location to other temp or project storage for test purposes to fix a FAILED, ExitCode 1 when running a samtools job Ticket #41823
+-modified and tested user meh004's job script and user environment to run user's python code with multiple GPUs with setting CPU affinity in cuda-dask, showed how to properly use "#SBATCH --exclusive" or  "#SBATCH --cpus-per-task" so cuda-dask can set CPU affinity  Ticket #41526
+-built and test elbencho
+-HPC OPS weekly meeting
+-Cosmos Sync weekly meeting
+-many other user issues
+
+
+Weekly 2/28/25
+Weekly 3/7/25
+Weekly 3/14/25
+-worked with system admins to check a node-related issue that is impacting multiple jobs. The jobs may be in completing" ("CG") status and cannot be terminated by the scancel command. Some of the job logs may include an error message such as  "NODE_FAIL". Also gave many users information on how to start jobs to better fit the job scheduler Ticket #41764 #41763 #41749  #41746 #41745 #41740 #41738 #41737 #41718 #41712 #41709 #41698  #41695 #41693 #41690 #41680 #41665  #41649 #41614 #41613 #41393
+-guided user abhowell on how to install pycistopic and scenicplus with extra plugins required by running large dataset on the local machine Ticket #41668
+-investigated user bay001's Galyleo log to see why the Jupyter notebook jobs shut down (service unavailable). Ticket #41712
+-helped user rmvogel modify the srun command to start interactive session Ticket #41731
+-investigated an issue in nextflow job submission with error "sbatch: error: Batch job submission failed: Unable to contact slurm controller (connect failure)", possibly caused by Slurm system glitch Ticket #41586 #41584
+-investigated the workflow of user kohjy2000's nextflow pipeline, found the extractRead step in the nextflow workflow submited nearly 2000 small Slurm jobs within minutes, suggested combine small jobs to large ones, or  configure the workflow to specify small, short jobs as using the local executor, leaving the larger and longer running jobs to the Slurm executor Ticket #41584
+-investigated a Kernel Restarting Error from user abhowell that was caused by OOM. Recommended some tests for testing the memory usage required and possible memory leak.  Ticket #41626
+-checked up user zhz121's disk space usage and system logs to fix two error when running jobs Ticket #41571
+-tested sending emails using sendmail in Slurm. Found that outbound emails to commercial emails like Gmail are blocked, but ucsd.edu is good Ticket #41537
+-guided user rmvogel how to compile the PostgreSQL database client with readline enabled Ticket #41530
+-worked with user meh004 to solve an issue with setting CPU affinity for GPU Ticket #41526
+-helped user abhowell to optimize the sbatch script to better request and use the resources when running cbust Ticket #41473
+-identified why user s2koo kept missing system libs when running binaries and suggested compiling the source code instead. Ticket #41457
+-helped user yiz020 understand TSCC 2.0's partition and QOS (vs. home queue in TSCC 1.0), and explained in details why the user got two types of error: (1) QOSGrpCpuLimit and (2) Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits).  Ticket #41428
+-tested how to manually install lftp 4.9 for user jasonwu Ticket #41421
+-examined user jhc103's job logs to prove GPU job submission was not pushed onto condo Ticket #41415
+-showed how job submission to platinum partition with hcp- QOS works, the QOS limitation, MCS labeling and available GPU partitions for condo users to user prvaldes  Ticket #41797
+-HPC systems monthly meeting
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Todd
+-Cosmos Sync weekly meeting
+-many other user issues
+
+Weekly 2/14/25
+Weekly 2/21/25
+-investigated user a9silva's PEPATAC pipeline that had issues with using "Skewer" for the sample trimming process, found out the reason for the issue and provided user with a few feasible solutions Ticket #41271
+-explained to user jiweng in detail about monitoring jobs with top and ps, and how to deal with a bottleneck step to improve efficiency Ticket #41247
+-investigated why some Amber jobs ran twice or three times as the jobs got requeued multiple times, possibly because of the node failure Ticket #41189
+-investigated a Singularity container execution failure, found the cache usage was the problem, and gave user suggestions on how to improve the Singularity building workflow Ticket #41155
+-had a Zoom meeting with a startup company that is hiring UCSD students for work and interested in using TSCC Ticket #41097
+-removed a line "source ~/.bashrc" from the beginning of user's slurm job script to fix a job submission error Ticket #41293
+-identified the issue of "`GLIBCXX_3.4.30' not found" and suggested user yuc211 not installing more packages into the conda base environment Ticket #41277
+-further tested vasp-vtst with MPI Ticket #40885
+-reproduced a "Delete Failed send2trash failed: [Errno 13] Permission denied: b'/tscc/lustre/ddn/.Trash-536466'"" when trying to delete a file under user etorreblancazanca's Jupyter session and confirmed setting delete_to_trash to False in a configuration file under your ~/.jupyter can be a workaround to fix the issue Ticket #41196
+-tested Seurat for user erw007
+-HPC systems monthly meeting
+-HPC OPS weekly meeting
+-opened several accounts together with Nicole and Todd
+-Cosmos Sync weekly meeting
+-many other user issues
+
 Weekly 1/31/25
 Weekly 2/7/25
 -installed and tested new Singularity image and databases of AF 3.0.1  Ticket #40903
