@@ -1,3 +1,40 @@
+Weekly 5/2/25
+Weekly 5/9/25
+-adapted Unifrac script from Igor and had 1-node and 8-node baseline and reliability testing on COSMOS, collected the data with scripts analyzed the data 
+-identified a critical job submission issue, and reached out to user kaw033 who kept submitting over 7600 jobs and each job ran various times to perform single cell entropy analysis. Explained in detail why this kind of job submission is harmful and provided a better workflow to perform such a analysis. Ticket #43007
+-identified an internal MPI error that crashed user achandrasekaran's LAMMPS jobs, and found the problem is node-related. Gave user two workarounds two fix the issue and tested if the problem happens on other nodes Ticket #42963 #42992
+-explained to user ziy024 how to properly build Singularity and Docker image, and suggested building libs and compiling tools from source, and how to better link the system-wide libs if that is required Ticket #42962
+-found a local storage clean-up issue, and followed up with the TSCC communities and the system admins Ticket #42979 #42844 #42751
+-found out the reason why galyleo could not restart the R kernel, and located the error "Fatal error: cannot create 'R_TempDir'" in the log file and suggested user not use /tmp as the temp location of R Ticket #42976
+-answered a few questions about thread, core, CPU and task in hardware and Slurm in detail and suggested how to better request and use the CPU resources in Slurm Ticket #42974 #42958
+-tried to find the reason for the error "torch.distributed.DistBackendError: NCCL error in ... unhandled cuda error" and suggested user not mix A100 and V100 nodes in a multi-node job Ticket #42909
+-fixed an error in user achandrasekaran's gromacs installation by adding a cmake flag to let openblas find gfortran  Ticket #42894
+-found a GPU issue on a rtx3090 node that prevented user bay001 from accessing GPUs in Singularity, and reported to the systems Ticket #42968
+-tested how to install R and Biomanager and a few external libs in a conda environment, and then install Bsgenomeforge in R  Ticket #42802
+-gave detailed advice about how to scale user meh004's python script with dask mpi or pytorch Ticket #42673
+-gave detailed advice about saving blast+ nr database into different file systems, and got updated about the performance tests from user jhc103 Ticket #42102
+-opened several accounts together with Nicole 
+-HPC OPS weekly meeting
+-Cosmos Sync weekly meeting
+-many other user issues
+
+Weekly 4/18/25
+Weekly 4/25/25
+-identified a critical job submission issue, and reached out to a user who submitted over 22,000 small jobs and each job only ran for a few seconds to perform disk usage analysis. Explained in detail why this job submission is harmful, and provided better workflow to perform such a anaysis. Ticket #42725
+-provided sinfo and the freenode check script to user ydoctor to query all available machines as well as their free cores at the time, and explained why NODE_FAIL happens and how to cancel the job requeue Ticket #42695
+-fully examined user meh004's code for using GPU, found why the code could not run on mulitple GPUs and provided user a few suggestions about the multi-node parallelization with dask mpi Ticket #42673
+-updated conda and trinity for user nagraysom, and monitored the computational resource usage in different steps of trinity and provided user a few suggestions to properly ask for the recourses. Ticket #42578
+-corrected user prvaldes's job script by asking for the correct number of CPUs, and getting the real-time CPU and RAM monitoring in the log files, and examined how SICER2 was running in parallel and its CPU and RAM usage pattern, and provided user a few suggestions about the resource request when running SICER2  Ticket #42576 #42548
+-examined why user aopatel's jupyter could not start, and pointed out that the related job submitted to the platinum node was still pending any explained why. Suggested user when to submit jobs to the condo partition and when to run Python code in batch mode rather than in the Jupyter Ticket #42520
+-found and followed up with the TSCC communities and the system admins about a serious node issue that brought almost every condo nodes offline. Ticket #42742 #42739 #42732 #42730
+-began to work to parallelize Seurat V5 code Ticket #42511
+-copied blast+ database nr to a few file system to test, and followed up with user jhc103 about the performance of querying blast+ database nr saved in Lustre, nfs and local storage respectively Ticket #42102
+-ran HPL tests on HT-on and HT-off nodes, and showed the system admins that the HT-on nodes had worse CPU performance so the HT-on nodes could be offline before the HT was turned off.  
+-opened several accounts together with Nicole 
+-HPC OPS weekly meeting
+-Cosmos Sync weekly meeting
+-many other user issues
+
 Weekly 4/4/25
 Weekly 4/11/25
 -investigated user aopatel's code issue. The code couldn't load CUDA or found GPUs. Identified a GPU node problem and reported to the system side Ticket #42380 
