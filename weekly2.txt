@@ -1,3 +1,68 @@
+Weekly 7/11/25
+Weekly 7/18/25
+-double-checked with user tiy002 and the PI about sharing some BAM files saved in their DbGap storage, confirmed with the PI that the data is publicly available and then pointed out the best way to share it with other TSCC members Ticket #44525
+-helped a user the best GPUs to choose that have the largest GPU memory other than a100 Ticket #44523
+-tested and confirmed with user haas about a JavaSpace connection problem on a certain node -Ticket #44508
+-answered a few questions about thread, core, CPU and task in hardware and Slurm in detail and suggested how to better request and use the CPU resources in Slurm Ticket #44488
+-had a Zoom meeting with a startup company and Ansys about setting up license server that can be reached out by TSCC Ticket #44435
+-found out why user prvaldes's R script failed to run and no outputs in the log, and provided solution to the user Ticket #44357
+-reached out to a few users who were running large applications on the login nodes Ticket #44350 #44349 #44348 #44581
+-created a script to query the storage usage of certain users under /tscc/lustre/restricted Ticket #44320
+-helped user  m5elliott to preinstall R packages before running the R script, and instructed how to fix the OOM issue by increasing the memory in the job script Ticket #44308
+-HPC systems monthly meeting
+-opened several accounts together with Nicole 
+-HPC OPS weekly meeting
+-many other user issues
+
+Weekly 6/27/25
+Weekly 7/4/25
+-helped to prepare CIPHER AI proposal and personal documents
+-worked on more stale NFS mount issues on certain nodes from Yeo Lab's project storage with system admins
+-finished Unifrac one-node reliability testing on three COSMOS nodes and generated a report in csv format
+-identified a few job crashes caused by OOM Ticket#44271
+-found the reason for the no space left on device error for user gajindal Ticket #44266
+-introduced proper way to install and run conda with miniforge3 to user aopatel Ticket #44148
+-investigated the D state of Python processes on a certain A100 node reported by users jeau and mdbarnes Ticket #44056
+-opened several accounts together with Nicole 
+-HPC OPS weekly meeting
+-many other user issues
+
+Weekly 6/13/25
+Weekly 6/20/25
+-helped to prepare CIPHER AI proposal and personal documents
+-found multiple runaway jobs that were showing in sacct but not squeue to keep charging SUs in user's allocations. 
+-worked on a stale NFS mount issue on certain nodes with the system admins
+-prepared a list that has nodename, PI name GPU/CPU type for every condo node
+-started Unifrac one-node reliability testing on three COSMOS nodes
+-found a default java difference on compute nodes that crashes user jobs and reported to the system admins to fix
+-tested and then reached out to Rose group about their new nodes in production, as well as informed the business office
+-identified a few job crashes caused by OOM Ticket #43978 #43943 #43926 #43755
+-had multiple tests to investigate a warning and an error caused by OOM when running R command in Jupyter Notebook, and provided the solution for user tvashist  Ticket #43960
+-investigated a hanging issue when launching Galyleo on TSCC with increased memory Ticket #43899
+-fixed an OSError: Unable to open file when running a pipeline Ticket #43840
+-HPC OPS weekly meeting
+-many other user issues
+
+Weekly 5/16/25
+Weekly 5/23/25
+Weekly 5/30/25
+Weekly 6/6/25
+-identified and tested an error of "slurm task_prolog can not be executed" that affected all job submissions, and later found out several specified nodes that had this issue and asked system admins to fix. Ticket #43344 #43435 #43433 #43436 #43432 #43437 #43439  #43445 #43358 #43357 #43356 #43353 #43304 #43349 #43345 #43342 #43341 #43310 #43306
+-identified multiple job crashes caused by OOM as the system now tracks the cgroup memory in Slurm after the downtime Ticket #43440 #43455 #43260 #43239 #43229 #43220 #43193 #43187 #43170 #43166 #43136 #43114
+-worked with users and a COMSOL representative to solve a COMSOL license hosting issue, installed and tested COMSOL with Singularity container on TSCC Ticket #37511
+-worked with other users to troubleshoot COMSOL and Ansys licensing and installation issues Ticket #41097
+-installed and tested Julia and some Julia packages in user kagnapathy's home directory Ticket #43188
+-fixed a nextflow running issue caused by using /tmp when it was full by redirecting the temp location to other space with -Djava.io.tmpdir Ticket #43159
+-tested an unpredictable behavior in jobs on various hotel nodes with user psaisan which might be caused by the bad project storage mounting Ticket #43283 #43239
+-provided detailed advice to a user about building Singularity images, including the right platform to build with definition files, how to submit Slurm job inside the Singularity, and how to get system-wide environment variables in the container imageTicket #42962
+-identified a node-specified GPU problem on tscc-gpu-5-16 Ticket #43031
+-opened several accounts together with Nicole 
+-HPC OPS weekly meeting
+-Cosmos Sync weekly meeting
+-many other user issues
+-took two weeks off
+
+
 Weekly 5/2/25
 Weekly 5/9/25
 -adapted Unifrac script from Igor and had 1-node and 8-node baseline and reliability testing on COSMOS, collected the data with scripts analyzed the data 
