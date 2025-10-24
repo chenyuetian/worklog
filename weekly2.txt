@@ -1,3 +1,99 @@
+Weekly 10/17/25
+Weekly 10/24/25
+-investigated an "sshare unknown host error" from running nested Slurm jobs in Snakemake 9 pipeline Ticket #46309
+-tested how to install FLIMLib and SWIG on TSCC Ticket #46297
+-investigated the slurmstepd: error: NVML: Failed to get Compute running procs(7): Insufficient Size, and explained to the user why it happens but not harmful Ticket #46259
+-investigated why  MARE2DEM runs crashed Ticket #46243 #46160
+-troubleshot why the loading command "library(DescTools)" cannot be executed when running a Snakemake rule Ticket #46229
+-found out the reason why user's RStudio session couldn't start on the reverse proxy server and updated the script Ticket #46164
+-investigated and fixed an error “Inconsistency detected between the normalization factor rownames and the object coverageAll_grouped.df" when rerunning a Snakemake pipeline Ticket #46158
+-installed R 4.5.1 with readline and specified blas and then rstan package under it and R 4.1.1 for user yul265 Ticket #46101
+-investigated why the previous successful job no longer produces a log file when running, and found out the node running the current job was rebooted multiple times  Ticket #46096
+-investigated why a job was requeued multiple times and failed Ticket #46093
+-cleaned up all active trial accounts that are older than 90 days with Nicole and Fernando Ticket #46043
+-coordinated several node decommissions with system admins, OPS, finance office and PIs
+-HPC systems monthly meeting
+-CSSI proposal weekly meeting
+-Cosmos Sync biweekly meeting
+-HPC OPS weekly meeting
+-many other user issues
+
+Weekly 10/3/25
+Weekly 10/10/25
+-coordinated several node decommissions with system admins, OPS, finance office and PIs
+-tested and found out why user l1joseph's conda install gave disk quota exceeded error even after cleaning up the home directory Ticket #46027
+-tested user jal098's jupyter lab and fixed the kernel issue Ticket #45947
+-investigated a sbatch error from user mix013 Ticket #45934
+-discussed with user zis021 about condo and hotel walltime limit and running Julia in parallel Ticket #45805
+-investigated user snarayanaswamy's Snakemake workflow and job submission process, then improved the workflow to let it run properly Ticket #45781
+-found out the reason why user ric205's jobs were killed or stuck Ticket #45720
+-CSSI proposal weekly meeting
+-Cosmos Sync biweekly meeting
+-HPC OPS weekly meeting
+-many other user issues
+
+Weekly 9/19/25
+Weekly 9/26/25
+-investigated a no space left on device issue caused by the singularity temp file dir and the improper singularity loaded Ticket #45725
+-investigated why user ric025's job failed for different reasons Ticket #45720
+-troubleshot why user achandrasekaran still had the illegal instruction error after excluding the AMD nodes Ticket #45693
+-answered and showed how to examine and securely change the folder permissions for user aopatel and prvaldes Ticket #45658
+-installed and tested RESPECT for user nmkoch Ticket #45544
+-troubleshot issues caused by R package installations and loadings in conda environment when using RStudio in Singularity image, and reinstalled all packages user bgunes required without conda Ticket #45501
+-troublesot why user silimaye's conda environment has no packages and the default system python and conda were loaded after activating the conda environment  Ticket #45389
+-CSSI proposal weekly meeting
+-SDSC General Staff meeting
+-Cosmos Sync biweekly meeting
+-HPC OPS weekly meeting
+-many other user issues
+
+Weekly 8/29/25
+Weekly 9/5/25
+Weekly 9/12/25
+-investigated why user patela's BioEmu failed in the batch mode Ticket #45516
+-investigated a `CXXABI_1.3.15' not found when loading a conda-installed Seurat in RStudio container, explained the reason and provided two workarounds to user bgunes Ticket #45501
+-investigated a few issues with bio tool installation with conda from user prvaldes Ticket #45478 #45476
+-troubleshot why a user cannot open or download in the graphical SSH-browser in MobaXterm Ticket #45426
+-reached out to a PI to collect the outstanding fee for a condo node Ticket #45405
+-showed user psaisan how to install and use cellbender on GPU node, and explained the checkpoint saving fails with TypeError Ticket #45403
+-investigated why user nmkoch's jobs could only on login node but not interactive or batch, and found the issue was node-specific. Ticket #45326
+-worked with TSCC and RDS system admins to update a project storage mounted to TSCC Task #45301
+-HPC systems monthly meeting
+-Cosmos Sync biweekly meeting
+-HPC OPS weekly meeting
+-many other user issues
+
+Weekly 8/15/25
+Weekly 8/22/25
+-actively check the storage mount status of hotel nodes, as some hotel nodes that rebooted recently don't have home and Lustre scratch properly mounted, causing various user issues Ticket #45135 #45121 #45109 #45043
+-worked on more stale NFS mount issues on certain nodes from Yeo Lab's project storage with system admins, and improved script detecting the stale mount 
+-helped user srini to solve the I/O error in the wc command caused by full scratch space and limitation on the login node Ticket #45021
+-worked with system admins and users to identify the reason for Galyleo service being down 
+-identified a few job crashes caused by OOM Ticket #45197 #45123 #45016 #44953
+-helped an Expanse user gyin1 with login, running Gaussian and ORCA Ticket #44945
+-installed a few R packages for user b3jia and corrected the user environment modules to run JAGS Ticket #45001
+-investigated why user amassara's process is hanging in D state Ticket #44688
+-found out the reason why some jobs finish earlier than others for user hziaeija, which is caused by the size of the input file (rather than node difference or running multiple jobs on the same node) Ticket #44997
+-HPC systems monthly meeting
+-opened several accounts together with Nicole 
+-HPC OPS weekly meeting
+-many other user issues
+
+Weekly 7/25/25
+Weekly 8/1/25
+Weekly 8/8/25
+-actively check the storage mount status of hotel nodes, as some hotel nodes that rebooted recently don't have home and Lustre scratch properly mounted, causing various user issues Ticket #44873 #44747 #44672
+-worked on more stale NFS mount issues on certain nodes from Yeo Lab's project storage with system admins
+-helped a few users to find out why their submitted jobs were stuck in the queue or failed to complete Ticket #44953 #44978 #44876
+-checked the permission configuration of a special project storage, and told the user how to properly give read access to the collaborators Ticket #44899
+-identified a few job crashes caused by OOM  Ticket #44847 #44815  #44688 #44641
+-reached out to a few users who were running large applications on the login nodes Ticket #44798 #44783 #44782 #44781 #44630 #44611 #44581
+-fixed an RStudio crashing error due to the cgroup path not being bound in Singularity by default Ticket #44682
+-provided more detailed information about the space usage with lfs, du and find commands in scripts under the storage usage of certain users under /tscc/lustre/restricted
+-opened several accounts together with Nicole 
+-HPC OPS weekly meeting
+-many other user issues
+
 Weekly 7/11/25
 Weekly 7/18/25
 -double-checked with user tiy002 and the PI about sharing some BAM files saved in their DbGap storage, confirmed with the PI that the data is publicly available and then pointed out the best way to share it with other TSCC members Ticket #44525
@@ -8,6 +104,7 @@ Weekly 7/18/25
 -found out why user prvaldes's R script failed to run and no outputs in the log, and provided solution to the user Ticket #44357
 -reached out to a few users who were running large applications on the login nodes Ticket #44350 #44349 #44348 #44581
 -created a script to query the storage usage of certain users under /tscc/lustre/restricted Ticket #44320
+-adapted the mount check command to the monitoring script with a timeout
 -helped user  m5elliott to preinstall R packages before running the R script, and instructed how to fix the OOM issue by increasing the memory in the job script Ticket #44308
 -HPC systems monthly meeting
 -opened several accounts together with Nicole 
